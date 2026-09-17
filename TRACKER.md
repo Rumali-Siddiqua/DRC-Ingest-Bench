@@ -14,7 +14,7 @@ Rule: a task is checked only when its "done" check has passed.
 - [ ] MCP overview
 - [ ] ChatEDA
 - [ ] Agentic EDA survey
-- [ ] docs/survey.md
+- [x] docs/survey.md
 
 ## Phase 2: Measurement
 - [x] First marker database measured

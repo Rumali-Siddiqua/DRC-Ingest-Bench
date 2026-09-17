@@ -43,7 +43,7 @@ This phase uses public resources only:
 | Phase | Goal | Status |
 |-------|------|--------|
 | 0 | Repository setup | Done |
-| 1 | Survey of agentic EDA, token-efficient formats, tool interfaces | Planned |
+| 1 | Survey of agentic EDA, token-efficient formats, tool interfaces | Done |
 | 2 | Token and cost measurement of raw KLayout marker databases | Done |
 | 3 | Benchmark pilot: violation injection and ground-truth tasks | Done |
 | 4 | Evaluation harness: raw baseline vs. one transformed candidate, two models | Planned |
