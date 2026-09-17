@@ -1,3 +1,5 @@
 .venv/
 experiments/**/run_*/
 corpus/scaled/
+*.egg-info/
+__pycache__/
