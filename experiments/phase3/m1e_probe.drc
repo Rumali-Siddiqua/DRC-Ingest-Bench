@@ -1,0 +1,12 @@
+# Isolate M1.e: compare the deck's check with two alternatives on the same layout.
+source($input)
+m1 = input(8, 0)
+wide = m1.sized(-0.15.um).sized(0.15.um)
+narrow = m1 - wide
+lim = projection_limits(1.001.um, nil)
+
+puts "Metal1 shapes:             #{m1.count}"
+puts "Wide shapes (>0.3 um):     #{wide.count}"
+puts "A: as coded (m1 sep wide): #{m1.sep(wide, 0.22.um, lim).count}"
+puts "B: space on all Metal1:    #{m1.space(0.22.um, lim).count}"
+puts "C: narrow sep wide:        #{narrow.sep(wide, 0.22.um, lim).count}"
