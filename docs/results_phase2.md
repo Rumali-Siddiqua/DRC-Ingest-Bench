@@ -40,10 +40,13 @@ IHP SG13G2 unit test layouts.
 ## Run 4 (valid): scaled metal1 arrays, step 53 x 118 um, full deck, flat mode
 | Grid | Markers | Header tok | Item tok | Total tok | Header share | Item overhead |
 |------|---------|------------|----------|-----------|--------------|---------------|
-| 4x4 | 384 | 48,992 | 41,852 | 90,844 | 54% | 67% |
-| 10x10 | 2,400 | 48,992 | 262,050 | 311,042 | 16% | 66% |
-| 20x20 | 9,600 | 48,992 | 1,067,980 | 1,116,972 | 4% | 65% |
-| 40x40 | 38,400 | 48,992 | 4,381,560 | 4,430,552 | 1% | 64% |
+| 4x4 | 384 | 48,992 | 41,852 | 91,237 | 54% | 67% |
+| 10x10 | 2,400 | 48,992 | 262,050 | 313,451 | 16% | 66% |
+| 20x20 | 9,600 | 48,992 | 1,067,980 | 1,126,581 | 4% | 65% |
+| 40x40 | 38,400 | 48,992 | 4,381,560 | 4,468,961 | 1% | 64% |
+(Total = whole-file token count, the canonical figure. Header and item columns are
+component counts and do not sum to it: inter-item newlines and closing tags are
+excluded from them.)
 - All counts match 24 x N^2 (DRC-validated)
 - Cost linear in markers (~110 tok/marker); rises 109 -> 114 as coordinates grow
 - 38,400 markers = 24 distinct problems x 1,600 identical cells; raw = 4.4M tokens

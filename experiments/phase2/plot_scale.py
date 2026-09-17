@@ -6,7 +6,8 @@ import matplotlib.pyplot as plt
 markers = [384, 2400, 9600, 38400]
 header = 48992
 items = [41852, 262050, 1067980, 4381560]
-total = [header + i for i in items]
+# Whole-file counts (canonical; see docs/results_phase2.md Run 5).
+total = [91237, 313451, 1126581, 4468961]
 
 fig, ax = plt.subplots(figsize=(6, 4))
 ax.loglog(markers, total, "o-", label="Total report tokens")
