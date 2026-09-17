@@ -8,12 +8,12 @@ Rule: a task is checked only when its "done" check has passed.
 - [ ] CONTRIBUTING.md and docs/ideas.md (needed before going public)
 
 ## Phase 1: Survey
-- [ ] KLayout DRC + marker DB docs
-- [ ] markitdown
-- [ ] TOON
-- [ ] MCP overview
-- [ ] ChatEDA
-- [ ] Agentic EDA survey
+- [x] KLayout DRC + marker DB docs
+- [x] markitdown
+- [x] TOON
+- [x] MCP overview
+- [x] ChatEDA
+- [x] Agentic EDA survey
 - [x] docs/survey.md
 
 ## Phase 2: Measurement
