@@ -43,3 +43,16 @@ pitch 5 x 12 um. Site types and their DRC markers:
 - Scales: 1 to 200 distinct problems, 1 to 400 markers; most tasks include clean distractor sites
 - Validator: 22/22 PASS (expected counts match, and each stated fix clears DRC)
 - Site independence holds to 200 sites; no interaction at any tested scale
+
+## Task 3.8: clustering tasks
+- Built from a clean 5-wire cell arrayed at a 15.002 um pitch (2 nm off the 5 nm grid)
+- Control at 15.0 um pitch: DRC clean, so every marker comes from the pitch alone
+- Measured markers: 3x3 = 160, 5x5 = 480, 10x10 = 1,920, 20x20 = 7,680 (all metal1_drw_Offgrid)
+- Counts are not a simple multiple of the copy count: a 2 nm step realigns with the 5 nm grid
+  every few copies, so some instances land back on grid. Counts are measured, not derived.
+- Ground truth: 1 distinct problem per task; fix = snap the pitch to 15.0 um
+- Largest ratio in the corpus: 7,680 markers from 1 root cause
+
+## Phase 3 summary
+- 26 tasks, all validated (rebuilt from JSON, DRC matched, fix verified clean)
+- 2 single-injection, 20 multi-site (1-200 problems), 4 clustering (1 problem, up to 7,680 markers)

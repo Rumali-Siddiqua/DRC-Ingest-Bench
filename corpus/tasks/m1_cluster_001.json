@@ -1,0 +1,43 @@
+{
+  "id": "m1_cluster_001",
+  "version": 1,
+  "rule_family": "offgrid_placement",
+  "task_type": "clustering",
+  "layout": {
+    "generator": "generators.offgrid_array",
+    "args": {
+      "n": 3,
+      "step_x_um": 15.002,
+      "step_y_um": 15.002
+    },
+    "gds": "corpus/multi/m1_cluster_001.gds",
+    "topcell": "m1_cluster_001"
+  },
+  "drc": {
+    "deck": "IHP-Open-PDK sg13g2 KLayout (run_drc.py)",
+    "options": [
+      "--no_density",
+      "--run_mode=flat"
+    ],
+    "klayout_version": "0.30.7",
+    "expected_counts": {
+      "metal1_drw_Offgrid": 160
+    }
+  },
+  "ground_truth": {
+    "distinct_problems": 1,
+    "total_markers": 160,
+    "root_cause": "The 3x3 array pitch is 15.002 um, which is 2 nm off the 5 nm manufacturing grid. Every off-grid instance puts its Metal1 edges off grid. The cell itself is clean.",
+    "rules_involved": [
+      "metal1_drw_Offgrid"
+    ],
+    "fix": {
+      "action": "snap the array pitch to the grid (15.0 um)",
+      "layout_args": {
+        "step_x_um": 15.0,
+        "step_y_um": 15.0
+      }
+    }
+  },
+  "notes": "One root cause, 160 markers. Control run at 15.0 um pitch is DRC clean. Marker count measured, not derived."
+}
