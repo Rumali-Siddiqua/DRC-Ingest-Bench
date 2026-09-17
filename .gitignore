@@ -4,3 +4,4 @@ corpus/scaled/
 *.egg-info/
 __pycache__/
 corpus/**/*.gds
+experiments/validate/

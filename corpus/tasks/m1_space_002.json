@@ -1,0 +1,25 @@
+{
+  "id": "m1_space_002",
+  "version": 1,
+  "rule_family": "metal1_spacing",
+  "layout": {
+    "generator": "generators.inject_spacing",
+    "args": {"gap": 0.20, "width1": 0.2},
+    "gds": "corpus/inject/m1_space_002.gds",
+    "topcell": "m1_space_002"
+  },
+  "drc": {
+    "deck": "IHP-Open-PDK sg13g2 KLayout (run_drc.py)",
+    "options": ["--no_density", "--run_mode=flat"],
+    "klayout_version": "0.30.7",
+    "expected_counts": {"M1.e": 1}
+  },
+  "ground_truth": {
+    "distinct_problems": 1,
+    "root_cause": "Narrow wire 1 (0.2 um) is 0.20 um from wide wire 0 (0.5 um) over a 10 um parallel run; required space is 0.22 um.",
+    "location": {"between": ["wire 0", "wire 1"], "x_um": [0.5, 0.7], "y_um": [0.0, 10.0]},
+    "fix": {"action": "move wire 1 in +x", "min_gap_um": 0.22,
+            "reason": "M1.e: space to a wire wider than 0.3 um with parallel run > 1.0 um"}
+  },
+  "notes": "Report description states the width threshold as 0.15 um; the check uses 0.3 um."
+}
