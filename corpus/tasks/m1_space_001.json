@@ -4,22 +4,49 @@
   "rule_family": "metal1_spacing",
   "layout": {
     "generator": "generators.inject_spacing",
-    "args": {"gap": 0.10, "width1": 0.5},
+    "args": {
+      "gap": 0.1,
+      "width1": 0.5
+    },
     "gds": "corpus/inject/m1_space_001.gds",
     "topcell": "m1_space_001"
   },
   "drc": {
     "deck": "IHP-Open-PDK sg13g2 KLayout (run_drc.py)",
-    "options": ["--no_density", "--run_mode=flat"],
+    "options": [
+      "--no_density",
+      "--run_mode=flat"
+    ],
     "klayout_version": "0.30.7",
-    "expected_counts": {"M1.b": 1}
+    "expected_counts": {
+      "M1.b": 1
+    }
   },
   "ground_truth": {
     "distinct_problems": 1,
     "root_cause": "Wire 1 is placed 0.10 um from wire 0; minimum Metal1 space is 0.18 um.",
-    "location": {"between": ["wire 0", "wire 1"], "x_um": [0.5, 0.6], "y_um": [0.0, 10.0]},
-    "fix": {"action": "move wire 1 in +x", "min_gap_um": 0.22,
-            "reason": "both wires are wider than 0.3 um with a 10 um parallel run, so M1.e (0.22 um) also applies by rule text"}
+    "location": {
+      "between": [
+        "wire 0",
+        "wire 1"
+      ],
+      "x_um": [
+        0.5,
+        0.6
+      ],
+      "y_um": [
+        0.0,
+        10.0
+      ]
+    },
+    "fix": {
+      "action": "move wire 1 in +x",
+      "min_gap_um": 0.22,
+      "reason": "both wires are wider than 0.3 um with a 10 um parallel run, so M1.e (0.22 um) also applies by rule text",
+      "layout_args": {
+        "gap": 0.22
+      }
+    }
   },
   "notes": "The deck reports only M1.b here; wide-vs-wide M1.e is not reported (see docs/results_phase3.md)."
 }

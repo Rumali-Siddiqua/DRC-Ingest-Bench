@@ -29,7 +29,7 @@ Rule: a task is checked only when its "done" check has passed.
 - [x] 3.3 One injected spacing violation: DRC matches exactly
 - [x] 3.4 Task JSON format + first task
 - [x] 3.5 Validator script (PASS/FAIL)
-- [ ] 3.6 Fix check: fixed layout DRC = 0
+- [x] 3.6 Fix check: fixed layout DRC = 0
 - [ ] 3.7 20 tasks at several scales, all PASS
 - [ ] 3.8 Clustering tasks from off-grid generator, all PASS
 

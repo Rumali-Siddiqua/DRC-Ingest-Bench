@@ -1,4 +1,5 @@
-"""Rebuild each task's layout from its JSON, run DRC, and compare with expected_counts."""
+"""Rebuild each task's layout from its JSON, run DRC, and compare with expected_counts.
+Then apply the ground-truth fix and require zero violations."""
 import importlib
 import json
 import sys
@@ -7,23 +8,38 @@ from pathlib import Path
 from harness.drc_check import DECK_OPTIONS, run_drc
 
 
+def build_gds(lay, args, suffix=""):
+    gds = Path(lay["gds"])
+    if suffix:
+        gds = gds.with_name(gds.stem + suffix + gds.suffix)
+    gds.parent.mkdir(parents=True, exist_ok=True)
+    gen = importlib.import_module(lay["generator"])
+    gen.build(top_name=lay["topcell"], **args).write(str(gds))
+    return gds
+
+
 def validate(task_path):
     task = json.loads(Path(task_path).read_text())
-    lay, drc = task["layout"], task["drc"]
+    lay, drc, fix = task["layout"], task["drc"], task["ground_truth"]["fix"]
+    out = Path("experiments/validate") / task["id"]
 
-    # The task must use the same deck options as the helper, or results aren't comparable.
     if drc["options"] != DECK_OPTIONS:
         return False, f"deck options {drc['options']} differ from helper {DECK_OPTIONS}"
 
-    gds = Path(lay["gds"])
-    gds.parent.mkdir(parents=True, exist_ok=True)
-    gen = importlib.import_module(lay["generator"])
-    gen.build(top_name=lay["topcell"], **lay["args"]).write(str(gds))
-
-    counts, _ = run_drc(gds, lay["topcell"], Path("experiments/validate") / task["id"])
+    # 1. The broken layout must report exactly the expected markers.
+    counts, _ = run_drc(build_gds(lay, lay["args"]), lay["topcell"], out / "broken")
     if counts != drc["expected_counts"]:
-        return False, f"expected {drc['expected_counts']}, got {counts}"
-    return True, f"{counts}"
+        return False, f"broken: expected {drc['expected_counts']}, got {counts}"
+
+    # 2. The fixed layout must be clean.
+    if "layout_args" not in fix:
+        return False, "no fix.layout_args in task"
+    fixed_args = {**lay["args"], **fix["layout_args"]}
+    fixed_counts, _ = run_drc(build_gds(lay, fixed_args, "_fixed"), lay["topcell"], out / "fixed")
+    if fixed_counts:
+        return False, f"fix does not clear DRC: {fixed_counts}"
+
+    return True, f"{counts} -> fixed clean"
 
 
 if __name__ == "__main__":

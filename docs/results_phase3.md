@@ -21,3 +21,7 @@ Setup: KLayout 0.30.7 (PDK pins 0.30.5), full deck, --no_density, flat mode.
 - Confirmed: gap 0.20 with wire 1 narrowed to 0.2 um -> M1.e = 1 (narrow-vs-wide fires)
 - Confirmed: gap 0.20 between two 0.5 um wires -> 0 (wide-vs-wide not reported)
 - Valid 3.3 tasks: gap010 (M1.b = 1), gap020_narrow (M1.e = 1)
+
+## Task 3.6: fix check
+- Fix = move wire 1 to gap 0.22 um (rule-text minimum), stored as fix.layout_args
+- Validator rebuilds broken and fixed layouts from the task JSON: both tasks PASS (broken matches, fixed = 0)
