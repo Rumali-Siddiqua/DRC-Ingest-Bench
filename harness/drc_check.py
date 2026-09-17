@@ -21,7 +21,9 @@ def run_drc(gds, topcell, run_dir):
     cmd = [sys.executable, str(DRC_SCRIPT), f"--path={gds}", f"--topcell={topcell}",
            f"--run_dir={run_dir}", *DECK_OPTIONS]
     # run_drc.py exits non-zero when violations exist, so the exit code is not checked.
-    subprocess.run(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    run_dir.mkdir(parents=True, exist_ok=True)
+    with open(run_dir / "drc_stdout.txt", "w") as out, open(run_dir / "drc_stderr.txt", "w") as err:
+        subprocess.run(cmd, stdout=out, stderr=err)
 
     reports = sorted(run_dir.glob("*.lyrdb"))
     if not reports:
