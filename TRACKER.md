@@ -24,8 +24,8 @@ Rule: a task is checked only when its "done" check has passed.
 - [x] Three-tokenizer comparison
 
 ## Phase 3: Benchmark pilot
-- [ ] 3.1 Metal1 layer number confirmed
-- [ ] 3.2 Clean base layout: DRC = 0
+- [x] 3.1 Metal1 layer number confirmed (8/0)
+- [x] 3.2 Clean base layout: DRC = 0
 - [ ] 3.3 One injected spacing violation: DRC matches exactly
 - [ ] 3.4 Task JSON format + first task
 - [ ] 3.5 Validator script (PASS/FAIL)

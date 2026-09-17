@@ -3,3 +3,4 @@ experiments/**/run_*/
 corpus/scaled/
 *.egg-info/
 __pycache__/
+corpus/**/*.gds
