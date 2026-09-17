@@ -11,10 +11,18 @@ dependencies = [
     "tiktoken",
     "matplotlib",
     "tokenizers",
+    "markitdown",
+    "python-toon",
+    "docopt",
+    "pandas",
+    "pyyaml",
+    "gdstk",
+    "tqdm",
+    "termcolor",
 ]
 
 [project.optional-dependencies]
 dev = ["pytest"]
 
 [tool.setuptools]
-packages = []
+packages = ["generators", "harness"]

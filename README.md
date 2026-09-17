@@ -57,17 +57,13 @@ Detailed progress is tracked in [TRACKER.md](TRACKER.md).
 docs/          survey, design notes, results
 corpus/        layouts, decks, ground-truth task files
 generators/    violation-injection scripts
-transforms/    raw artifacts -> candidate representations
 harness/       task runner, scoring, cost and latency logging
 experiments/   run configurations and results
-tests/         unit and validation tests
 ```
 
 ## Getting started
 
-> Setup instructions will be completed once Phase 2 tooling is in place.
-
-Requirements (planned):
+Requirements:
 
 - Python 3.10+
 - [KLayout](https://www.klayout.de) and the `klayout` Python package
