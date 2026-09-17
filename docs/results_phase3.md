@@ -25,3 +25,21 @@ Setup: KLayout 0.30.7 (PDK pins 0.30.5), full deck, --no_density, flat mode.
 ## Task 3.6: fix check
 - Fix = move wire 1 to gap 0.22 um (rule-text minimum), stored as fix.layout_args
 - Validator rebuilds broken and fixed layouts from the task JSON: both tasks PASS (broken matches, fixed = 0)
+
+## Task 3.7: site types (verified)
+Each site: wide wire 0.5 um + second wire at given gap/width, 10 um parallel run,
+pitch 5 x 12 um. Site types and their DRC markers:
+| Site | Gap um | Width1 um | Markers | Distinct problems |
+|------|--------|-----------|---------|-------------------|
+| s1 | 0.10 | 0.5 | M1.b: 1 | 1 |
+| s2 | 0.20 | 0.5 | none (deck miss) | 1 |
+| s3 | 0.20 | 0.2 | M1.e: 1 | 1 |
+| s4 | 0.10 | 0.2 | M1.b: 1, M1.e: 1 | 1 |
+- all4 (one of each) = M1.b 2, M1.e 2 = exact sum -> sites are independent at this pitch
+- s4 is the key clustering case: one root cause reported under two rules
+
+## Task 3.7: task corpus
+- 22 tasks generated from the verified site table (generators/make_tasks.py)
+- Scales: 1 to 200 distinct problems, 1 to 400 markers; most tasks include clean distractor sites
+- Validator: 22/22 PASS (expected counts match, and each stated fix clears DRC)
+- Site independence holds to 200 sites; no interaction at any tested scale
