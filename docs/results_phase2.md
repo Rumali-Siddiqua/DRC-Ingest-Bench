@@ -48,3 +48,16 @@ IHP SG13G2 unit test layouts.
 - Cost linear in markers (~110 tok/marker); rises 109 -> 114 as coordinates grow
 - 38,400 markers = 24 distinct problems x 1,600 identical cells; raw = 4.4M tokens
 - DRC runtime 11s -> 42s; reading the report costs far more than producing it
+
+## Run 5: tokenizer comparison on Run 4 reports (whole-file counts)
+| Grid | cl100k | o200k | Qwen2.5 | Qwen vs cl100k |
+|------|--------|-------|---------|----------------|
+| 4x4 | 91,237 | 91,051 | 101,161 | +11% |
+| 10x10 | 313,451 | 313,265 | 381,915 | +22% |
+| 20x20 | 1,126,581 | 1,126,395 | 1,405,885 | +25% |
+| 40x40 | 4,468,961 | 4,468,775 | 5,599,545 | +25% |
+- Correction: Run 4 "Total" omitted inter-item newlines and closing tags (whole file = total + markers + 9, <1%)
+- Whole-file counts are the reference numbers from now on
+- cl100k and o200k within 0.2% on this content
+- Qwen2.5 up to 25% higher, gap grows with scale -> likely per-digit number tokenization; coordinates cost more on some models
+- Supports reporting cost per model, not token counts alone
