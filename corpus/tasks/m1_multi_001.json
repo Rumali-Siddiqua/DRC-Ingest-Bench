@@ -25,7 +25,9 @@
     "klayout_version": "0.30.7",
     "expected_counts": {
       "M1.b": 1
-    }
+    },
+    "pdk_commit": "5e6d592e4002946a4616f798c357f0f3c06cf3b6",
+    "klayout_python": "0.30.12"
   },
   "ground_truth": {
     "distinct_problems": 1,
