@@ -11,3 +11,7 @@
 - Observation: each item is 12 XML lines; only the <value> line carries geometry
 - Observation: report does not state the measured value (e.g. M1.a width 0.150 vs 0.16 min)
 - Caveat: one small layout, edge-pair markers only
+- metal1.gds full deck: 830 rules listed, 12 with violations (~1.4% of catalogue relevant)
+- Violated: M1.a/b/c/c1/d/e/f/g/i, M1Fil.a1, M1Fil.c, Cnt.h (sum = 24, matches)
+- M1.c, M1.c1, M1.d not run by --table=metal1 (likely in extra rules) -> tasks must record deck options
+- Cnt.h fires on the Metal1 layout -> one problem can appear under several rule tables
