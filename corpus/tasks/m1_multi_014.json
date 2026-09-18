@@ -138,7 +138,6 @@
     "clean_sites": 25,
     "fix": {
       "action": "increase every violating gap to at least 0.22 um",
-      "min_gap_um": 0.22,
       "layout_args": {
         "gaps": [
           0.22,
@@ -193,7 +192,9 @@
           0.3
         ]
       },
-      "type": "set_min_gap"
+      "type": "set_min_gap",
+      "artifact_value_um": 0.22,
+      "spec_value_um": 0.22
     },
     "problems": {
       "problem_001": {
@@ -373,7 +374,14 @@
       "M1.e@10.500,24.000,10.700,34.000": "problem_023",
       "M1.e@15.500,24.000,15.700,34.000": "problem_024",
       "M1.e@20.500,24.000,20.700,34.000": "problem_025"
-    }
+    },
+    "cause": {
+      "type": "spacing",
+      "gap_um": 0.2,
+      "artifact_required_gap_um": 0.22,
+      "spec_required_gap_um": 0.22
+    },
+    "known_deck_discrepancy": false
   },
   "notes": "Site type s3. Verified in docs/results_phase3.md. 25 clean site(s) act as distractors.",
   "task_type": "root_cause"

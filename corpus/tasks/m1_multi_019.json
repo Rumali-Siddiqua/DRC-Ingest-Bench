@@ -440,7 +440,6 @@
     "clean_sites": 100,
     "fix": {
       "action": "increase every violating gap to at least 0.22 um",
-      "min_gap_um": 0.22,
       "layout_args": {
         "gaps": [
           0.22,
@@ -645,7 +644,9 @@
           0.3
         ]
       },
-      "type": "set_min_gap"
+      "type": "set_min_gap",
+      "artifact_value_um": 0.22,
+      "spec_value_um": 0.22
     },
     "problems": {
       "problem_001": {
@@ -1550,7 +1551,14 @@
       "M1.e@40.500,108.000,40.600,118.000": "problem_099",
       "M1.b@45.500,108.000,45.600,118.000": "problem_100",
       "M1.e@45.500,108.000,45.600,118.000": "problem_100"
-    }
+    },
+    "cause": {
+      "type": "spacing",
+      "gap_um": 0.1,
+      "artifact_required_gap_um": 0.22,
+      "spec_required_gap_um": 0.22
+    },
+    "known_deck_discrepancy": false
   },
   "notes": "Site type s4. Verified in docs/results_phase3.md. 100 clean site(s) act as distractors.",
   "task_type": "root_cause"

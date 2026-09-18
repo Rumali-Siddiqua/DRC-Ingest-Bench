@@ -117,3 +117,19 @@ Three reference strategies establish the scale that real model results are read 
 - The earlier note that mock_perfect scoring 1.00 "confirms the scorer and ground truth
   agree" referred to f1 only. With typed fixes, mock_perfect now scores 1.00 on f1,
   rule accuracy and fix validity across all 112 runs.
+
+## Artifact-conditioned scoring (after the pilot audit)
+- Fixes are typed: set_min_gap (23 tasks), snap_array_pitch (5). fix_validity is null, not
+  zero, where a task's fix type has no automated check.
+- Each task carries a structured cause (spacing, or offgrid_array_pitch) alongside the prose,
+  giving a deterministic cause_accuracy without an LLM judge.
+- Spacing tasks record artifact_required_gap_um and spec_required_gap_um separately. On the
+  7 wide-vs-wide tasks the deck reports only M1.b (0.18 um) although the M1.e rule text
+  requires 0.22 um; those tasks carry known_deck_discrepancy = true.
+- Policy: primary scoring is artifact-conditioned. A model is judged on the constraints
+  observable in the report it was given, since penalising it for an unreported rule would
+  test hidden knowledge rather than artifact ingestion. Results can be broken out by
+  known_deck_discrepancy.
+- mock_perfect now scores 1.00 on f1, fix validity and cause accuracy across all 112 runs.
+- Scorer performance: candidate pairs are pre-filtered by problem extent, avoiding the
+  1,000 x 1,000 distance comparisons that made m1_multi_021 impractically slow.

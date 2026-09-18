@@ -62,3 +62,89 @@ representation, and task id.
 An answer that is not valid JSON, or lacks `problems`, scores zero on every metric
 and is recorded as a parse failure. Parse-failure rate is reported per
 representation, since a representation that confuses models is a finding.
+
+## Structured cause (added after the pilot audit)
+
+Each problem may carry a machine-checkable `cause` alongside the prose `root_cause`:
+
+```json
+"cause": {"type": "spacing", "gap_um": 0.10, "required_gap_um": 0.18}
+"cause": {"type": "offgrid_array_pitch", "pitch_um": 15.002}
+```
+
+`cause_accuracy` is the share of matched problems whose cause type and values match ground
+truth. It is null when a task's cause type has no automated check.
+
+## Fixes are typed
+
+| Type | Model returns | Tasks |
+|------|---------------|-------|
+| `set_min_gap` | `fix_min_gap_um` | 23 |
+| `snap_array_pitch` | `fix_pitch_um: [x, y]` | 5 |
+
+`fix_validity` is null, not zero, when a task's fix type has no
+python - << 'PY'
+from pathlib import Path
+
+# mock_perfect: use the artifact value and emit a structured cause.
+p = Path("harness/run.py")
+t = p.read_text()
+old = """        if gt["fix"].get("type") == "snap_array_pitch":
+            entry["fix_pitch_um"] = [gt["fix"]["pitch_x_um"], gt["fix"]["pitch_y_um"]]
+        else:
+            entry["fix_min_gap_um"] = gt["fix"].get("min_gap_um")
+        probs.append(entry)"""
+new = """        cause = gt.get("cause", {})
+        if gt["fix"].get("type") == "snap_array_pitch":
+            entry["fix_pitch_um"] = [gt["fix"]["pitch_x_um"], gt["fix"]["pitch_y_um"]]
+            entry["cause"] = {"type": "offgrid_array_pitch", "pitch_um": cause.get("pitch_um")}
+        else:
+            entry["fix_min_gap_um"] = gt["fix"].get("artifact_value_um")
+            entry["cause"] = {"type": "spacing", "gap_um": cause.get("gap_um"),
+                              "required_gap_um": cause.get("artifact_required_gap_um")}
+        probs.append(entry)"""
+assert old in t, "mock_perfect block not found"
+p.write_text(t.replace(old, new))
+print("mock_perfect updated")
+PY
+
+cat >> docs/answer_format.md << 'EOF'
+
+## Structured cause (added after the pilot audit)
+
+Each problem may carry a machine-checkable `cause` alongside the prose `root_cause`:
+
+```json
+"cause": {"type": "spacing", "gap_um": 0.10, "required_gap_um": 0.18}
+"cause": {"type": "offgrid_array_pitch", "pitch_um": 15.002}
+```
+
+`cause_accuracy` is the share of matched problems whose cause type and values match ground
+truth. It is null when a task's cause type has no automated check.
+
+## Fixes are typed
+
+| Type | Model returns | Tasks |
+|------|---------------|-------|
+| `set_min_gap` | `fix_min_gap_um` | 23 |
+| `snap_array_pitch` | `fix_pitch_um: [x, y]` | 5 |
+
+`fix_validity` is null, not zero, when a task's fix type has no automated check. Zero means
+the model proposed an invalid fix.
+
+## Artifact-conditioned scoring
+
+Fix and cause scoring use the constraint **observable in the artifact the model was given**,
+not the intended rule semantics. Where the two differ, both are recorded:
+
+```json
+"cause": {"artifact_required_gap_um": 0.18, "spec_required_gap_um": 0.22}
+"known_deck_discrepancy": true
+```
+
+This affects 7 spacing tasks, where two wide wires produce an M1.b marker (0.18 um) although
+the M1.e rule text would require 0.22 um; the deck does not report M1.e for wide-vs-wide
+geometry (see docs/results_phase3.md). A model reading such a report cannot know about a rule
+the report never mentions, so scoring it against 0.22 would test hidden knowledge rather than
+artifact-ingestion quality. Results can be broken out by `known_deck_discrepancy`, and a
+secondary spec-conditioned metric can be reported later if models are given rule-text access.

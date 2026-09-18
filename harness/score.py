@@ -16,7 +16,13 @@ def truth_problems(task):
         if m:
             boxes.setdefault(pid, []).append(
                 (float(m["x0"]), float(m["y0"]), float(m["x1"]), float(m["y1"])))
-    return {pid: {**info, "boxes": boxes.get(pid, [])} for pid, info in gt["problems"].items()}
+    out = {}
+    for pid, info in gt["problems"].items():
+        bs = boxes.get(pid, [])
+        extent = (min(b[0] for b in bs), min(b[1] for b in bs),
+                  max(b[2] for b in bs), max(b[3] for b in bs)) if bs else (0, 0, -1, -1)
+        out[pid] = {**info, "boxes": bs, "extent": extent}
+    return out
 
 
 def distance_to_boxes(pt, boxes):
@@ -30,6 +36,10 @@ def distance_to_boxes(pt, boxes):
     return best
 
 
+def _close(a, b, tol=1e-6):
+    return isinstance(a, (int, float)) and abs(float(a) - b) < tol
+
+
 def score(task, answer):
     truth = truth_problems(task)
     fix_spec = task["ground_truth"]["fix"]
@@ -38,6 +48,9 @@ def score(task, answer):
         return {"parse_ok": False, "precision": 0.0, "recall": 0.0, "f1": 0.0,
                 "rule_accuracy": 0.0, "fix_validity": 0.0, "matched": 0,
                 "fix_type": task["ground_truth"]["fix"].get("type"),
+                "cause_type": task["ground_truth"].get("cause", {}).get("type"),
+                "cause_accuracy": 0.0,
+                "known_deck_discrepancy": task["ground_truth"].get("known_deck_discrepancy", False),
                 "reported": 0, "truth": len(truth), "count_error": -len(truth)}
 
     reported = answer["problems"]
@@ -48,8 +61,14 @@ def score(task, answer):
         loc = p.get("location_um")
         if not (isinstance(loc, (list, tuple)) and len(loc) == 2):
             continue
+        px, py = float(loc[0]), float(loc[1])
         for pid, info in truth.items():
-            d = distance_to_boxes((float(loc[0]), float(loc[1])), info["boxes"])
+            bx0, by0, bx1, by1 = info["extent"]
+            if px < bx0 - TOLERANCE_UM or px > bx1 + TOLERANCE_UM:
+                continue
+            if py < by0 - TOLERANCE_UM or py > by1 + TOLERANCE_UM:
+                continue
+            d = distance_to_boxes((px, py), info["boxes"])
             if d <= TOLERANCE_UM:
                 pairs.append((d, i, pid))
 
@@ -70,9 +89,9 @@ def score(task, answer):
         1 for i, pid in matches
         if sorted(str(r) for r in reported[i].get("rules", [])) == sorted(truth[pid]["rules"]))
     fix_ok, fix_scored = 0, False
-    if fix_spec.get("type") == "set_min_gap" and fix_spec.get("min_gap_um") is not None:
+    if fix_spec.get("type") == "set_min_gap" and fix_spec.get("artifact_value_um") is not None:
         fix_scored = True
-        need = fix_spec["min_gap_um"]
+        need = fix_spec["artifact_value_um"]
         fix_ok = sum(
             1 for i, _ in matches
             if isinstance(reported[i].get("fix_min_gap_um"), (int, float))
@@ -87,6 +106,23 @@ def score(task, answer):
             and abs(float(reported[i]["fix_pitch_um"][0]) - fix_spec["pitch_x_um"]) < tol
             and abs(float(reported[i]["fix_pitch_um"][1]) - fix_spec["pitch_y_um"]) < tol)
 
+    cause = task["ground_truth"].get("cause", {})
+    cause_ok, cause_scored = 0, bool(cause)
+    if cause.get("type") == "spacing":
+        need = cause["artifact_required_gap_um"]
+        cause_ok = sum(
+            1 for i, _ in matches
+            if reported[i].get("cause", {}).get("type") == "spacing"
+            and _close(reported[i]["cause"].get("gap_um"), cause["gap_um"])
+            and _close(reported[i]["cause"].get("required_gap_um"), need))
+    elif cause.get("type") == "offgrid_array_pitch":
+        cause_ok = sum(
+            1 for i, _ in matches
+            if reported[i].get("cause", {}).get("type") == "offgrid_array_pitch"
+            and _close(reported[i]["cause"].get("pitch_um"), cause["pitch_um"]))
+    else:
+        cause_scored = False
+
     return {
         "parse_ok": True,
         "reported": len(reported),
@@ -98,6 +134,9 @@ def score(task, answer):
         "f1": round(f1, 4),
         "rule_accuracy": round(rules_ok / n_match, 4) if n_match else 0.0,
         "fix_type": fix_spec.get("type"),
+        "cause_type": cause.get("type"),
+        "cause_accuracy": (round(cause_ok / n_match, 4) if n_match else 0.0) if cause_scored else None,
+        "known_deck_discrepancy": task["ground_truth"].get("known_deck_discrepancy", False),
         "fix_validity": (round(fix_ok / n_match, 4) if n_match else 0.0) if fix_scored else None,
     }
 

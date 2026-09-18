@@ -75,10 +75,14 @@ def mock_perfect(prompt, task):
         y = (float(m[2]) + float(m[4])) / 2
         entry = {"id": i, "rules": info["rules"], "location_um": [x, y],
                  "marker_count": info["marker_count"]}
+        cause = gt.get("cause", {})
         if gt["fix"].get("type") == "snap_array_pitch":
             entry["fix_pitch_um"] = [gt["fix"]["pitch_x_um"], gt["fix"]["pitch_y_um"]]
+            entry["cause"] = {"type": "offgrid_array_pitch", "pitch_um": cause.get("pitch_um")}
         else:
-            entry["fix_min_gap_um"] = gt["fix"].get("min_gap_um")
+            entry["fix_min_gap_um"] = gt["fix"].get("artifact_value_um")
+            entry["cause"] = {"type": "spacing", "gap_um": cause.get("gap_um"),
+                              "required_gap_um": cause.get("artifact_required_gap_um")}
         probs.append(entry)
     text = json.dumps({"problems": probs})
     return text, len(enc.encode(prompt)), len(enc.encode(text))

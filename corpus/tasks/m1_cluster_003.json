@@ -1972,6 +1972,11 @@
       "metal1_drw_Offgrid@142.518,10.000,142.518,10.000": "problem_001",
       "metal1_drw_Offgrid@143.018,10.000,143.018,10.000": "problem_001",
       "metal1_drw_Offgrid@143.018,0.000,143.018,0.000": "problem_001"
+    },
+    "cause": {
+      "type": "offgrid_array_pitch",
+      "pitch_um": 15.002,
+      "grid_nm": 5
     }
   },
   "notes": "One root cause, 1920 markers. Control run at 15.0 um pitch is DRC clean. Marker count measured, not derived."
