@@ -35,13 +35,16 @@ Rule: a task is checked only when its "done" check has passed.
 
 ## Phase 4: Harness
 - [x] Answer format and scoring contract (docs/answer_format.md)
-- [x] Scorer with tests (5/5 pass)
+- [x] Scorer with tests (14 pass)
+- [x] Typed fixes and structured causes; artifact-conditioned scoring
 - [x] Four representations: raw, json, clustered, signature
-- [x] Corpus extended to 28 tasks (up to 30,720 markers, 1,000 problems)
+- [x] Corpus at 28 tasks (1 to 30,720 markers, 1 to 1,000 problems)
 - [x] Context-fit and per-task cost table
-- [x] Runner with three mock baselines (perfect, one-per-marker, empty)
-- [ ] Real model runs (needs API access) - raw vs json vs signature, two models
-- [ ] Decide context-overflow handling before running
+- [x] Runner with three mock baselines
+- [x] Audit fixes: wording, typed fixes, causes, reproducible generators, pinned versions
+- [ ] Context-overflow policy, decided before any model run
+- [ ] Sanity batch on a few small tasks
+- [ ] Raw vs json vs signature, two models
 - [ ] Success-vs-token-budget plot
 
 ## Phase 5: Write-up
