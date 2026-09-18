@@ -51,10 +51,16 @@ for n, site, n_viol, n_clean in PLAN:
         "drc": {
             "deck": "IHP-Open-PDK sg13g2 KLayout (run_drc.py)",
             "options": ["--no_density", "--run_mode=flat"],
-            "klayout_version": "0.30.7",
+        "klayout_version": "0.30.7",
+        "klayout_python": "0.30.12",
+        "pdk_commit": "5e6d592e4002946a4616f798c357f0f3c06cf3b6",
             "expected_counts": expected,
         },
         "ground_truth": {
+            "cause": {"type": "spacing", "gap_um": gap,
+                      "artifact_required_gap_um": 0.22 if "M1.e" in expected else 0.18,
+                      "spec_required_gap_um": 0.22},
+            "known_deck_discrepancy": "M1.e" not in expected,
             "distinct_problems": n_viol,
             "total_markers": sum(expected.values()),
             "root_cause": (f"{n_viol} independent site(s) where a second wire is {gap} um "
@@ -64,8 +70,10 @@ for n, site, n_viol, n_clean in PLAN:
             "markers_per_problem": sum(markers.values()),
             "clean_sites": n_clean,
             "fix": {
+                "type": "set_min_gap",
                 "action": "increase every violating gap to at least 0.22 um",
-                "min_gap_um": 0.22,
+                "artifact_value_um": 0.22 if "M1.e" in expected else 0.18,
+                "spec_value_um": 0.22,
                 "layout_args": {"gaps": [0.22] * n_viol + [CLEAN[0]] * n_clean},
             },
         },

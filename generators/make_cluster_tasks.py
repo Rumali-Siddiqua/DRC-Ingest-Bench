@@ -26,10 +26,14 @@ for i, (n, markers) in enumerate(sorted(MEASURED.items()), start=1):
         "drc": {
             "deck": "IHP-Open-PDK sg13g2 KLayout (run_drc.py)",
             "options": ["--no_density", "--run_mode=flat"],
-            "klayout_version": "0.30.7",
+        "klayout_version": "0.30.7",
+        "klayout_python": "0.30.12",
+        "pdk_commit": "5e6d592e4002946a4616f798c357f0f3c06cf3b6",
             "expected_counts": {"metal1_drw_Offgrid": markers},
         },
         "ground_truth": {
+            "cause": {"type": "offgrid_array_pitch", "pitch_um": STEP, "grid_nm": 5},
+            "known_deck_discrepancy": False,
             "distinct_problems": 1,
             "total_markers": markers,
             "root_cause": (f"The {n}x{n} array pitch is {STEP} um, which is 2 nm off the 5 nm "
@@ -37,6 +41,9 @@ for i, (n, markers) in enumerate(sorted(MEASURED.items()), start=1):
                            f"off grid. The cell itself is clean."),
             "rules_involved": ["metal1_drw_Offgrid"],
             "fix": {
+                "type": "snap_array_pitch",
+                "pitch_x_um": STEP_FIXED,
+                "pitch_y_um": STEP_FIXED,
                 "action": f"snap the array pitch to the grid ({STEP_FIXED} um)",
                 "layout_args": {"step_x_um": STEP_FIXED, "step_y_um": STEP_FIXED},
             },
