@@ -34,11 +34,15 @@ Rule: a task is checked only when its "done" check has passed.
 - [x] 3.8 Clustering tasks from off-grid generator, all PASS
 
 ## Phase 4: Harness
-- [ ] Task runner
-- [ ] Scorer
-- [ ] Cost/latency logger
-- [ ] Raw baseline run (2 models)
-- [ ] One transformed candidate run (2 models)
+- [x] Answer format and scoring contract (docs/answer_format.md)
+- [x] Scorer with tests (5/5 pass)
+- [x] Four representations: raw, json, clustered, signature
+- [x] Corpus extended to 28 tasks (up to 30,720 markers, 1,000 problems)
+- [x] Context-fit and per-task cost table
+- [x] Runner with three mock baselines (perfect, one-per-marker, empty)
+- [ ] Real model runs (needs API access) - raw vs json vs signature, two models
+- [ ] Decide context-overflow handling before running
+- [ ] Success-vs-token-budget plot
 
 ## Phase 5: Write-up
 - [ ] Report
