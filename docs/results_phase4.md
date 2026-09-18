@@ -60,3 +60,29 @@ Stronger observations from the per-task table:
   when there is nothing to collapse.
 - Signature gains least on 2:1 tasks (m1_multi_015: 627 vs 1,351, only 2x), where two
   shapes and 50 distinct positions leave little to compress.
+
+
+## Corpus extended to 28 tasks; context fit becomes decisive
+Added m1_cluster_005 (40x40 off-grid array, 30,720 markers, 1 root cause) and
+m1_multi_021 (1,000 s4 sites, 2,000 markers, 1,000 problems). Both DRC-validated; 28/28 pass.
+
+| Task | markers | problems | raw | json | clustered | signature |
+|------|---------|----------|-----|------|-----------|-----------|
+| m1_cluster_005 | 30,720 | 1 | 3,481,960 | 860,205 | 856,168 | 340 |
+| m1_multi_021 | 2,000 | 1,000 | 252,320 | 50,761 | 56,804 | 676 |
+
+Tasks fitting a window (representation alone):
+| window | raw | json | clustered | signature |
+|--------|-----|------|-----------|-----------|
+| 128k | 24/28 | 26/28 | 26/28 | 28/28 |
+| 200k | 24/28 | 26/28 | 26/28 | 28/28 |
+| 1M | 27/28 | 28/28 | 28/28 | 28/28 |
+
+- m1_cluster_005 raw (3.48M tokens) exceeds every window listed. Compact JSON (860k)
+  also exceeds 128k and 200k, so structuring alone does not rescue it at this scale.
+  Signature answers in 340 tokens: a factor of 10,241 against raw.
+- This refines the earlier finding: structuring beats serialization, but semantic
+  restructuring beats both when the redundancy is semantic rather than syntactic.
+- m1_multi_021 is the sharpest test in the corpus: 676 tokens describing 1,000 genuinely
+  distinct problems, with only 20 of 1,000 positions shown. Whether a model can report
+  them correctly from that is precisely what the task-success evaluation must decide.
