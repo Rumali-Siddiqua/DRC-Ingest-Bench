@@ -86,3 +86,23 @@ Tasks fitting a window (representation alone):
 - m1_multi_021 is the sharpest test in the corpus: 676 tokens describing 1,000 genuinely
   distinct problems, with only 20 of 1,000 positions shown. Whether a model can report
   them correctly from that is precisely what the task-success evaluation must decide.
+
+## Harness baselines (mock models, no API cost)
+Three reference strategies establish the scale that real model results are read against:
+
+| Strategy | 1:1 tasks | 2:1 tasks (s4) | clustering tasks |
+|----------|-----------|----------------|------------------|
+| mock_perfect (answers from ground truth) | 1.00 | 1.00 | 1.00 |
+| mock_one_per_marker (every marker a problem) | 1.00 | 0.67 | 0.00 |
+| mock_empty | 0.00 | 0.00 | 0.00 |
+
+- mock_perfect scoring 1.00 on all 112 runs confirms the scorer and the ground truth agree.
+- mock_one_per_marker is the discriminating case: marker-counting is a perfect strategy on
+  the 1:1 tasks and worthless on the clustering tasks (f1 = 0.00 at 480 markers and above).
+  A corpus of only 1:1 tasks could not distinguish counting from reasoning.
+- The 0.67 on s4 tasks is precision 0.5, recall 1.0: one physical gap reported twice.
+- mock_empty scores 0.00 on all 112 runs, as the floor should.
+- CAVEAT: mock models answer from ground truth, not from the payload, so their scores are
+  identical across all four representations. These runs validate the scorer, not the
+  representations, and mock_perfect is NOT an achievable ceiling for lossy representations
+  (signature shows only 20 of 1,000 positions on m1_multi_021).
