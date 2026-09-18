@@ -2,19 +2,21 @@
 
 **A benchmark for measuring how well LLM agents can read and debug DRC (Design Rule Check) results.**
 
-> Status: early development (Phase 1 pilot). Interfaces, formats, and results will change.
+> Status: RC-003 independent pilot. Phase 4 evaluation harness in progress.
+> Interfaces, formats, and results will change.
 
 ---
 
 ## The problem
 
 DRC outputs were designed for humans and GUIs, not for language models. A marker database can hold
-thousands of near-identical geometry entries, engine logs are unstructured text, and layouts are binary
-GDS that an LLM cannot read at all. As LLM agents enter EDA flows, they consume these artifacts as-is,
+thousands of near-identical geometry entries, engine logs are unstructured text, and raw GDS is a binary layout
+representation that is not directly text-readable by a language model. As LLM agents enter EDA flows, they consume these artifacts as-is,
 spending context window on syntax and repetition instead of on the information that matters.
 
-Nobody has measured what this costs, or tested what a better representation should look like.
-This project builds that measurement.
+To the best of our knowledge, we have not identified prior work that quantitatively compares
+DRC verification-artifact representations on common ground-truth debugging tasks while
+measuring task success and ingestion cost. This project builds that measurement.
 
 ## Research questions
 
@@ -46,7 +48,7 @@ This phase uses public resources only:
 | 1 | Survey of agentic EDA, token-efficient formats, tool interfaces | Done |
 | 2 | Token and cost measurement of raw KLayout marker databases | Done |
 | 3 | Benchmark pilot: violation injection and ground-truth tasks | Done |
-| 4 | Evaluation harness: raw baseline vs. one transformed candidate, two models | Planned |
+| 4 | Evaluation harness and model comparison | In progress |
 | 5 | Write-up of pilot results | Planned |
 
 Detailed progress is tracked in [TRACKER.md](TRACKER.md).

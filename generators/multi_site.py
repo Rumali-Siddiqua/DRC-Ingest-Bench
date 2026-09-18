@@ -7,7 +7,7 @@ from generators.base_layout import METAL1, DBU, to_dbu
 
 WIDE = 0.5      # um
 LENGTH = 10.0   # um, parallel run
-PITCH_X = 5.0   # um; widest site is ~1.2 um, so >= 3.7 um clearance
+PITCH_X = 5.0   # um; widest site is ~1.3 um (0.5 + 0.3 + 0.5), so >= 3.7 um clearance
 PITCH_Y = 12.0  # um; 2 um between rows
 
 

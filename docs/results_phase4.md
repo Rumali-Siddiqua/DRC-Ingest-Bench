@@ -25,7 +25,7 @@
 |------|---------|-----|------|-----------|-----------|
 | m1_multi_006 | 4 | 49,404 | 201 | 253 | 284 |
 | m1_multi_020 | 400 | 89,400 | 10,101 | 11,341 | 627 |
-| m1_cluster_004 | 7,680 | 905,320 | 213,512 | 213,512 | 340 |
+| m1_cluster_004 | 7,680 | 905,320 | 215,085 | 213,512 | 340 |
 - m1_cluster_004: 905,320 -> 340 tokens, a factor of ~2,660, by describing one repeated
   marker shape once instead of 7,680 times
 - m1_multi_020: 16x smaller than compact JSON
@@ -81,8 +81,9 @@ Tasks fitting a window (representation alone):
 - m1_cluster_005 raw (3.48M tokens) exceeds every window listed. Compact JSON (860k)
   also exceeds 128k and 200k, so structuring alone does not rescue it at this scale.
   Signature answers in 340 tokens: a factor of 10,241 against raw.
-- This refines the earlier finding: structuring beats serialization, but semantic
-  restructuring beats both when the redundancy is semantic rather than syntactic.
+- This refines the earlier finding, for representation SIZE only: semantic restructuring
+  can outperform syntactic compression when the dominant redundancy is semantic rather than
+  syntactic. Whether that reduction preserves or improves debugging success is untested.
 - m1_multi_021 is the sharpest test in the corpus: 676 tokens describing 1,000 genuinely
   distinct problems, with only 20 of 1,000 positions shown. Whether a model can report
   them correctly from that is precisely what the task-success evaluation must decide.
