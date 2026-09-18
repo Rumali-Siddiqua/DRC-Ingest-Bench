@@ -195,7 +195,237 @@
           0.3
         ]
       }
+    },
+    "problems": {
+      "problem_001": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_002": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_003": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_004": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_005": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_006": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_007": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_008": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_009": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_010": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_011": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_012": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_013": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_014": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_015": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_016": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_017": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_018": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_019": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_020": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_021": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_022": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_023": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_024": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_025": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      }
+    },
+    "marker_to_problem": {
+      "M1.b@0.500,0.000,0.600,10.000": "problem_001",
+      "M1.e@0.500,0.000,0.600,10.000": "problem_001",
+      "M1.b@5.500,0.000,5.600,10.000": "problem_002",
+      "M1.e@5.500,0.000,5.600,10.000": "problem_002",
+      "M1.b@10.500,0.000,10.600,10.000": "problem_003",
+      "M1.e@10.500,0.000,10.600,10.000": "problem_003",
+      "M1.b@15.500,0.000,15.600,10.000": "problem_004",
+      "M1.e@15.500,0.000,15.600,10.000": "problem_004",
+      "M1.b@20.500,0.000,20.600,10.000": "problem_005",
+      "M1.e@20.500,0.000,20.600,10.000": "problem_005",
+      "M1.b@25.500,0.000,25.600,10.000": "problem_006",
+      "M1.e@25.500,0.000,25.600,10.000": "problem_006",
+      "M1.b@30.500,0.000,30.600,10.000": "problem_007",
+      "M1.e@30.500,0.000,30.600,10.000": "problem_007",
+      "M1.b@35.500,0.000,35.600,10.000": "problem_008",
+      "M1.e@35.500,0.000,35.600,10.000": "problem_008",
+      "M1.b@40.500,0.000,40.600,10.000": "problem_009",
+      "M1.e@40.500,0.000,40.600,10.000": "problem_009",
+      "M1.b@45.500,0.000,45.600,10.000": "problem_010",
+      "M1.e@45.500,0.000,45.600,10.000": "problem_010",
+      "M1.b@0.500,12.000,0.600,22.000": "problem_011",
+      "M1.e@0.500,12.000,0.600,22.000": "problem_011",
+      "M1.b@5.500,12.000,5.600,22.000": "problem_012",
+      "M1.e@5.500,12.000,5.600,22.000": "problem_012",
+      "M1.b@10.500,12.000,10.600,22.000": "problem_013",
+      "M1.e@10.500,12.000,10.600,22.000": "problem_013",
+      "M1.b@15.500,12.000,15.600,22.000": "problem_014",
+      "M1.e@15.500,12.000,15.600,22.000": "problem_014",
+      "M1.b@20.500,12.000,20.600,22.000": "problem_015",
+      "M1.e@20.500,12.000,20.600,22.000": "problem_015",
+      "M1.b@25.500,12.000,25.600,22.000": "problem_016",
+      "M1.e@25.500,12.000,25.600,22.000": "problem_016",
+      "M1.b@30.500,12.000,30.600,22.000": "problem_017",
+      "M1.e@30.500,12.000,30.600,22.000": "problem_017",
+      "M1.b@35.500,12.000,35.600,22.000": "problem_018",
+      "M1.e@35.500,12.000,35.600,22.000": "problem_018",
+      "M1.b@40.500,12.000,40.600,22.000": "problem_019",
+      "M1.e@40.500,12.000,40.600,22.000": "problem_019",
+      "M1.b@45.500,12.000,45.600,22.000": "problem_020",
+      "M1.e@45.500,12.000,45.600,22.000": "problem_020",
+      "M1.b@0.500,24.000,0.600,34.000": "problem_021",
+      "M1.e@0.500,24.000,0.600,34.000": "problem_021",
+      "M1.b@5.500,24.000,5.600,34.000": "problem_022",
+      "M1.e@5.500,24.000,5.600,34.000": "problem_022",
+      "M1.b@10.500,24.000,10.600,34.000": "problem_023",
+      "M1.e@10.500,24.000,10.600,34.000": "problem_023",
+      "M1.b@15.500,24.000,15.600,34.000": "problem_024",
+      "M1.e@15.500,24.000,15.600,34.000": "problem_024",
+      "M1.b@20.500,24.000,20.600,34.000": "problem_025",
+      "M1.e@20.500,24.000,20.600,34.000": "problem_025"
     }
   },
-  "notes": "Site type s4. Verified in docs/results_phase3.md. 25 clean site(s) act as distractors."
+  "notes": "Site type s4. Verified in docs/results_phase3.md. 25 clean site(s) act as distractors.",
+  "task_type": "root_cause"
 }

@@ -103,7 +103,82 @@
           0.3
         ]
       }
+    },
+    "problems": {
+      "problem_001": {
+        "rules": [
+          "M1.e"
+        ],
+        "marker_count": 1
+      },
+      "problem_002": {
+        "rules": [
+          "M1.e"
+        ],
+        "marker_count": 1
+      },
+      "problem_003": {
+        "rules": [
+          "M1.e"
+        ],
+        "marker_count": 1
+      },
+      "problem_004": {
+        "rules": [
+          "M1.e"
+        ],
+        "marker_count": 1
+      },
+      "problem_005": {
+        "rules": [
+          "M1.e"
+        ],
+        "marker_count": 1
+      },
+      "problem_006": {
+        "rules": [
+          "M1.e"
+        ],
+        "marker_count": 1
+      },
+      "problem_007": {
+        "rules": [
+          "M1.e"
+        ],
+        "marker_count": 1
+      },
+      "problem_008": {
+        "rules": [
+          "M1.e"
+        ],
+        "marker_count": 1
+      },
+      "problem_009": {
+        "rules": [
+          "M1.e"
+        ],
+        "marker_count": 1
+      },
+      "problem_010": {
+        "rules": [
+          "M1.e"
+        ],
+        "marker_count": 1
+      }
+    },
+    "marker_to_problem": {
+      "M1.e@0.500,0.000,0.700,10.000": "problem_001",
+      "M1.e@5.500,0.000,5.700,10.000": "problem_002",
+      "M1.e@10.500,0.000,10.700,10.000": "problem_003",
+      "M1.e@15.500,0.000,15.700,10.000": "problem_004",
+      "M1.e@20.500,0.000,20.700,10.000": "problem_005",
+      "M1.e@25.500,0.000,25.700,10.000": "problem_006",
+      "M1.e@30.500,0.000,30.700,10.000": "problem_007",
+      "M1.e@35.500,0.000,35.700,10.000": "problem_008",
+      "M1.e@40.500,0.000,40.700,10.000": "problem_009",
+      "M1.e@45.500,0.000,45.700,10.000": "problem_010"
     }
   },
-  "notes": "Site type s3. Verified in docs/results_phase3.md. 10 clean site(s) act as distractors."
+  "notes": "Site type s3. Verified in docs/results_phase3.md. 10 clean site(s) act as distractors.",
+  "task_type": "root_cause"
 }

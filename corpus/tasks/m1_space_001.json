@@ -48,7 +48,19 @@
       "layout_args": {
         "gap": 0.22
       }
+    },
+    "problems": {
+      "problem_001": {
+        "rules": [
+          "M1.b"
+        ],
+        "marker_count": 1
+      }
+    },
+    "marker_to_problem": {
+      "M1.b@0.500,0.000,0.600,10.000": "problem_001"
     }
   },
-  "notes": "The deck reports only M1.b here; wide-vs-wide M1.e is not reported (see docs/results_phase3.md)."
+  "notes": "The deck reports only M1.b here; wide-vs-wide M1.e is not reported (see docs/results_phase3.md).",
+  "task_type": "root_cause"
 }

@@ -1245,7 +1245,1812 @@
           0.3
         ]
       }
+    },
+    "problems": {
+      "problem_001": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_002": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_003": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_004": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_005": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_006": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_007": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_008": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_009": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_010": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_011": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_012": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_013": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_014": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_015": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_016": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_017": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_018": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_019": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_020": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_021": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_022": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_023": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_024": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_025": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_026": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_027": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_028": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_029": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_030": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_031": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_032": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_033": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_034": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_035": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_036": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_037": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_038": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_039": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_040": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_041": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_042": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_043": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_044": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_045": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_046": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_047": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_048": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_049": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_050": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_051": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_052": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_053": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_054": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_055": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_056": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_057": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_058": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_059": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_060": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_061": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_062": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_063": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_064": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_065": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_066": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_067": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_068": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_069": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_070": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_071": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_072": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_073": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_074": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_075": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_076": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_077": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_078": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_079": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_080": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_081": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_082": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_083": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_084": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_085": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_086": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_087": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_088": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_089": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_090": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_091": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_092": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_093": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_094": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_095": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_096": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_097": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_098": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_099": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_100": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_101": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_102": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_103": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_104": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_105": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_106": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_107": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_108": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_109": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_110": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_111": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_112": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_113": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_114": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_115": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_116": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_117": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_118": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_119": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_120": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_121": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_122": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_123": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_124": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_125": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_126": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_127": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_128": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_129": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_130": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_131": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_132": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_133": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_134": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_135": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_136": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_137": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_138": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_139": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_140": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_141": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_142": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_143": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_144": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_145": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_146": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_147": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_148": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_149": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_150": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_151": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_152": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_153": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_154": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_155": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_156": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_157": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_158": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_159": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_160": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_161": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_162": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_163": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_164": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_165": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_166": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_167": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_168": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_169": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_170": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_171": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_172": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_173": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_174": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_175": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_176": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_177": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_178": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_179": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_180": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_181": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_182": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_183": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_184": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_185": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_186": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_187": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_188": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_189": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_190": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_191": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_192": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_193": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_194": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_195": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_196": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_197": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_198": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_199": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_200": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      }
+    },
+    "marker_to_problem": {
+      "M1.b@0.500,0.000,0.600,10.000": "problem_001",
+      "M1.e@0.500,0.000,0.600,10.000": "problem_001",
+      "M1.b@5.500,0.000,5.600,10.000": "problem_002",
+      "M1.e@5.500,0.000,5.600,10.000": "problem_002",
+      "M1.b@10.500,0.000,10.600,10.000": "problem_003",
+      "M1.e@10.500,0.000,10.600,10.000": "problem_003",
+      "M1.b@15.500,0.000,15.600,10.000": "problem_004",
+      "M1.e@15.500,0.000,15.600,10.000": "problem_004",
+      "M1.b@20.500,0.000,20.600,10.000": "problem_005",
+      "M1.e@20.500,0.000,20.600,10.000": "problem_005",
+      "M1.b@25.500,0.000,25.600,10.000": "problem_006",
+      "M1.e@25.500,0.000,25.600,10.000": "problem_006",
+      "M1.b@30.500,0.000,30.600,10.000": "problem_007",
+      "M1.e@30.500,0.000,30.600,10.000": "problem_007",
+      "M1.b@35.500,0.000,35.600,10.000": "problem_008",
+      "M1.e@35.500,0.000,35.600,10.000": "problem_008",
+      "M1.b@40.500,0.000,40.600,10.000": "problem_009",
+      "M1.e@40.500,0.000,40.600,10.000": "problem_009",
+      "M1.b@45.500,0.000,45.600,10.000": "problem_010",
+      "M1.e@45.500,0.000,45.600,10.000": "problem_010",
+      "M1.b@0.500,12.000,0.600,22.000": "problem_011",
+      "M1.e@0.500,12.000,0.600,22.000": "problem_011",
+      "M1.b@5.500,12.000,5.600,22.000": "problem_012",
+      "M1.e@5.500,12.000,5.600,22.000": "problem_012",
+      "M1.b@10.500,12.000,10.600,22.000": "problem_013",
+      "M1.e@10.500,12.000,10.600,22.000": "problem_013",
+      "M1.b@15.500,12.000,15.600,22.000": "problem_014",
+      "M1.e@15.500,12.000,15.600,22.000": "problem_014",
+      "M1.b@20.500,12.000,20.600,22.000": "problem_015",
+      "M1.e@20.500,12.000,20.600,22.000": "problem_015",
+      "M1.b@25.500,12.000,25.600,22.000": "problem_016",
+      "M1.e@25.500,12.000,25.600,22.000": "problem_016",
+      "M1.b@30.500,12.000,30.600,22.000": "problem_017",
+      "M1.e@30.500,12.000,30.600,22.000": "problem_017",
+      "M1.b@35.500,12.000,35.600,22.000": "problem_018",
+      "M1.e@35.500,12.000,35.600,22.000": "problem_018",
+      "M1.b@40.500,12.000,40.600,22.000": "problem_019",
+      "M1.e@40.500,12.000,40.600,22.000": "problem_019",
+      "M1.b@45.500,12.000,45.600,22.000": "problem_020",
+      "M1.e@45.500,12.000,45.600,22.000": "problem_020",
+      "M1.b@0.500,24.000,0.600,34.000": "problem_021",
+      "M1.e@0.500,24.000,0.600,34.000": "problem_021",
+      "M1.b@5.500,24.000,5.600,34.000": "problem_022",
+      "M1.e@5.500,24.000,5.600,34.000": "problem_022",
+      "M1.b@10.500,24.000,10.600,34.000": "problem_023",
+      "M1.e@10.500,24.000,10.600,34.000": "problem_023",
+      "M1.b@15.500,24.000,15.600,34.000": "problem_024",
+      "M1.e@15.500,24.000,15.600,34.000": "problem_024",
+      "M1.b@20.500,24.000,20.600,34.000": "problem_025",
+      "M1.e@20.500,24.000,20.600,34.000": "problem_025",
+      "M1.b@25.500,24.000,25.600,34.000": "problem_026",
+      "M1.e@25.500,24.000,25.600,34.000": "problem_026",
+      "M1.b@30.500,24.000,30.600,34.000": "problem_027",
+      "M1.e@30.500,24.000,30.600,34.000": "problem_027",
+      "M1.b@35.500,24.000,35.600,34.000": "problem_028",
+      "M1.e@35.500,24.000,35.600,34.000": "problem_028",
+      "M1.b@40.500,24.000,40.600,34.000": "problem_029",
+      "M1.e@40.500,24.000,40.600,34.000": "problem_029",
+      "M1.b@45.500,24.000,45.600,34.000": "problem_030",
+      "M1.e@45.500,24.000,45.600,34.000": "problem_030",
+      "M1.b@0.500,36.000,0.600,46.000": "problem_031",
+      "M1.e@0.500,36.000,0.600,46.000": "problem_031",
+      "M1.b@5.500,36.000,5.600,46.000": "problem_032",
+      "M1.e@5.500,36.000,5.600,46.000": "problem_032",
+      "M1.b@10.500,36.000,10.600,46.000": "problem_033",
+      "M1.e@10.500,36.000,10.600,46.000": "problem_033",
+      "M1.b@15.500,36.000,15.600,46.000": "problem_034",
+      "M1.e@15.500,36.000,15.600,46.000": "problem_034",
+      "M1.b@20.500,36.000,20.600,46.000": "problem_035",
+      "M1.e@20.500,36.000,20.600,46.000": "problem_035",
+      "M1.b@25.500,36.000,25.600,46.000": "problem_036",
+      "M1.e@25.500,36.000,25.600,46.000": "problem_036",
+      "M1.b@30.500,36.000,30.600,46.000": "problem_037",
+      "M1.e@30.500,36.000,30.600,46.000": "problem_037",
+      "M1.b@35.500,36.000,35.600,46.000": "problem_038",
+      "M1.e@35.500,36.000,35.600,46.000": "problem_038",
+      "M1.b@40.500,36.000,40.600,46.000": "problem_039",
+      "M1.e@40.500,36.000,40.600,46.000": "problem_039",
+      "M1.b@45.500,36.000,45.600,46.000": "problem_040",
+      "M1.e@45.500,36.000,45.600,46.000": "problem_040",
+      "M1.b@0.500,48.000,0.600,58.000": "problem_041",
+      "M1.e@0.500,48.000,0.600,58.000": "problem_041",
+      "M1.b@5.500,48.000,5.600,58.000": "problem_042",
+      "M1.e@5.500,48.000,5.600,58.000": "problem_042",
+      "M1.b@10.500,48.000,10.600,58.000": "problem_043",
+      "M1.e@10.500,48.000,10.600,58.000": "problem_043",
+      "M1.b@15.500,48.000,15.600,58.000": "problem_044",
+      "M1.e@15.500,48.000,15.600,58.000": "problem_044",
+      "M1.b@20.500,48.000,20.600,58.000": "problem_045",
+      "M1.e@20.500,48.000,20.600,58.000": "problem_045",
+      "M1.b@25.500,48.000,25.600,58.000": "problem_046",
+      "M1.e@25.500,48.000,25.600,58.000": "problem_046",
+      "M1.b@30.500,48.000,30.600,58.000": "problem_047",
+      "M1.e@30.500,48.000,30.600,58.000": "problem_047",
+      "M1.b@35.500,48.000,35.600,58.000": "problem_048",
+      "M1.e@35.500,48.000,35.600,58.000": "problem_048",
+      "M1.b@40.500,48.000,40.600,58.000": "problem_049",
+      "M1.e@40.500,48.000,40.600,58.000": "problem_049",
+      "M1.b@45.500,48.000,45.600,58.000": "problem_050",
+      "M1.e@45.500,48.000,45.600,58.000": "problem_050",
+      "M1.b@0.500,60.000,0.600,70.000": "problem_051",
+      "M1.e@0.500,60.000,0.600,70.000": "problem_051",
+      "M1.b@5.500,60.000,5.600,70.000": "problem_052",
+      "M1.e@5.500,60.000,5.600,70.000": "problem_052",
+      "M1.b@10.500,60.000,10.600,70.000": "problem_053",
+      "M1.e@10.500,60.000,10.600,70.000": "problem_053",
+      "M1.b@15.500,60.000,15.600,70.000": "problem_054",
+      "M1.e@15.500,60.000,15.600,70.000": "problem_054",
+      "M1.b@20.500,60.000,20.600,70.000": "problem_055",
+      "M1.e@20.500,60.000,20.600,70.000": "problem_055",
+      "M1.b@25.500,60.000,25.600,70.000": "problem_056",
+      "M1.e@25.500,60.000,25.600,70.000": "problem_056",
+      "M1.b@30.500,60.000,30.600,70.000": "problem_057",
+      "M1.e@30.500,60.000,30.600,70.000": "problem_057",
+      "M1.b@35.500,60.000,35.600,70.000": "problem_058",
+      "M1.e@35.500,60.000,35.600,70.000": "problem_058",
+      "M1.b@40.500,60.000,40.600,70.000": "problem_059",
+      "M1.e@40.500,60.000,40.600,70.000": "problem_059",
+      "M1.b@45.500,60.000,45.600,70.000": "problem_060",
+      "M1.e@45.500,60.000,45.600,70.000": "problem_060",
+      "M1.b@0.500,72.000,0.600,82.000": "problem_061",
+      "M1.e@0.500,72.000,0.600,82.000": "problem_061",
+      "M1.b@5.500,72.000,5.600,82.000": "problem_062",
+      "M1.e@5.500,72.000,5.600,82.000": "problem_062",
+      "M1.b@10.500,72.000,10.600,82.000": "problem_063",
+      "M1.e@10.500,72.000,10.600,82.000": "problem_063",
+      "M1.b@15.500,72.000,15.600,82.000": "problem_064",
+      "M1.e@15.500,72.000,15.600,82.000": "problem_064",
+      "M1.b@20.500,72.000,20.600,82.000": "problem_065",
+      "M1.e@20.500,72.000,20.600,82.000": "problem_065",
+      "M1.b@25.500,72.000,25.600,82.000": "problem_066",
+      "M1.e@25.500,72.000,25.600,82.000": "problem_066",
+      "M1.b@30.500,72.000,30.600,82.000": "problem_067",
+      "M1.e@30.500,72.000,30.600,82.000": "problem_067",
+      "M1.b@35.500,72.000,35.600,82.000": "problem_068",
+      "M1.e@35.500,72.000,35.600,82.000": "problem_068",
+      "M1.b@40.500,72.000,40.600,82.000": "problem_069",
+      "M1.e@40.500,72.000,40.600,82.000": "problem_069",
+      "M1.b@45.500,72.000,45.600,82.000": "problem_070",
+      "M1.e@45.500,72.000,45.600,82.000": "problem_070",
+      "M1.b@0.500,84.000,0.600,94.000": "problem_071",
+      "M1.e@0.500,84.000,0.600,94.000": "problem_071",
+      "M1.b@5.500,84.000,5.600,94.000": "problem_072",
+      "M1.e@5.500,84.000,5.600,94.000": "problem_072",
+      "M1.b@10.500,84.000,10.600,94.000": "problem_073",
+      "M1.e@10.500,84.000,10.600,94.000": "problem_073",
+      "M1.b@15.500,84.000,15.600,94.000": "problem_074",
+      "M1.e@15.500,84.000,15.600,94.000": "problem_074",
+      "M1.b@20.500,84.000,20.600,94.000": "problem_075",
+      "M1.e@20.500,84.000,20.600,94.000": "problem_075",
+      "M1.b@25.500,84.000,25.600,94.000": "problem_076",
+      "M1.e@25.500,84.000,25.600,94.000": "problem_076",
+      "M1.b@30.500,84.000,30.600,94.000": "problem_077",
+      "M1.e@30.500,84.000,30.600,94.000": "problem_077",
+      "M1.b@35.500,84.000,35.600,94.000": "problem_078",
+      "M1.e@35.500,84.000,35.600,94.000": "problem_078",
+      "M1.b@40.500,84.000,40.600,94.000": "problem_079",
+      "M1.e@40.500,84.000,40.600,94.000": "problem_079",
+      "M1.b@45.500,84.000,45.600,94.000": "problem_080",
+      "M1.e@45.500,84.000,45.600,94.000": "problem_080",
+      "M1.b@0.500,96.000,0.600,106.000": "problem_081",
+      "M1.e@0.500,96.000,0.600,106.000": "problem_081",
+      "M1.b@5.500,96.000,5.600,106.000": "problem_082",
+      "M1.e@5.500,96.000,5.600,106.000": "problem_082",
+      "M1.b@10.500,96.000,10.600,106.000": "problem_083",
+      "M1.e@10.500,96.000,10.600,106.000": "problem_083",
+      "M1.b@15.500,96.000,15.600,106.000": "problem_084",
+      "M1.e@15.500,96.000,15.600,106.000": "problem_084",
+      "M1.b@20.500,96.000,20.600,106.000": "problem_085",
+      "M1.e@20.500,96.000,20.600,106.000": "problem_085",
+      "M1.b@25.500,96.000,25.600,106.000": "problem_086",
+      "M1.e@25.500,96.000,25.600,106.000": "problem_086",
+      "M1.b@30.500,96.000,30.600,106.000": "problem_087",
+      "M1.e@30.500,96.000,30.600,106.000": "problem_087",
+      "M1.b@35.500,96.000,35.600,106.000": "problem_088",
+      "M1.e@35.500,96.000,35.600,106.000": "problem_088",
+      "M1.b@40.500,96.000,40.600,106.000": "problem_089",
+      "M1.e@40.500,96.000,40.600,106.000": "problem_089",
+      "M1.b@45.500,96.000,45.600,106.000": "problem_090",
+      "M1.e@45.500,96.000,45.600,106.000": "problem_090",
+      "M1.b@0.500,108.000,0.600,118.000": "problem_091",
+      "M1.e@0.500,108.000,0.600,118.000": "problem_091",
+      "M1.b@5.500,108.000,5.600,118.000": "problem_092",
+      "M1.e@5.500,108.000,5.600,118.000": "problem_092",
+      "M1.b@10.500,108.000,10.600,118.000": "problem_093",
+      "M1.e@10.500,108.000,10.600,118.000": "problem_093",
+      "M1.b@15.500,108.000,15.600,118.000": "problem_094",
+      "M1.e@15.500,108.000,15.600,118.000": "problem_094",
+      "M1.b@20.500,108.000,20.600,118.000": "problem_095",
+      "M1.e@20.500,108.000,20.600,118.000": "problem_095",
+      "M1.b@25.500,108.000,25.600,118.000": "problem_096",
+      "M1.e@25.500,108.000,25.600,118.000": "problem_096",
+      "M1.b@30.500,108.000,30.600,118.000": "problem_097",
+      "M1.e@30.500,108.000,30.600,118.000": "problem_097",
+      "M1.b@35.500,108.000,35.600,118.000": "problem_098",
+      "M1.e@35.500,108.000,35.600,118.000": "problem_098",
+      "M1.b@40.500,108.000,40.600,118.000": "problem_099",
+      "M1.e@40.500,108.000,40.600,118.000": "problem_099",
+      "M1.b@45.500,108.000,45.600,118.000": "problem_100",
+      "M1.e@45.500,108.000,45.600,118.000": "problem_100",
+      "M1.b@0.500,120.000,0.600,130.000": "problem_101",
+      "M1.e@0.500,120.000,0.600,130.000": "problem_101",
+      "M1.b@5.500,120.000,5.600,130.000": "problem_102",
+      "M1.e@5.500,120.000,5.600,130.000": "problem_102",
+      "M1.b@10.500,120.000,10.600,130.000": "problem_103",
+      "M1.e@10.500,120.000,10.600,130.000": "problem_103",
+      "M1.b@15.500,120.000,15.600,130.000": "problem_104",
+      "M1.e@15.500,120.000,15.600,130.000": "problem_104",
+      "M1.b@20.500,120.000,20.600,130.000": "problem_105",
+      "M1.e@20.500,120.000,20.600,130.000": "problem_105",
+      "M1.b@25.500,120.000,25.600,130.000": "problem_106",
+      "M1.e@25.500,120.000,25.600,130.000": "problem_106",
+      "M1.b@30.500,120.000,30.600,130.000": "problem_107",
+      "M1.e@30.500,120.000,30.600,130.000": "problem_107",
+      "M1.b@35.500,120.000,35.600,130.000": "problem_108",
+      "M1.e@35.500,120.000,35.600,130.000": "problem_108",
+      "M1.b@40.500,120.000,40.600,130.000": "problem_109",
+      "M1.e@40.500,120.000,40.600,130.000": "problem_109",
+      "M1.b@45.500,120.000,45.600,130.000": "problem_110",
+      "M1.e@45.500,120.000,45.600,130.000": "problem_110",
+      "M1.b@0.500,132.000,0.600,142.000": "problem_111",
+      "M1.e@0.500,132.000,0.600,142.000": "problem_111",
+      "M1.b@5.500,132.000,5.600,142.000": "problem_112",
+      "M1.e@5.500,132.000,5.600,142.000": "problem_112",
+      "M1.b@10.500,132.000,10.600,142.000": "problem_113",
+      "M1.e@10.500,132.000,10.600,142.000": "problem_113",
+      "M1.b@15.500,132.000,15.600,142.000": "problem_114",
+      "M1.e@15.500,132.000,15.600,142.000": "problem_114",
+      "M1.b@20.500,132.000,20.600,142.000": "problem_115",
+      "M1.e@20.500,132.000,20.600,142.000": "problem_115",
+      "M1.b@25.500,132.000,25.600,142.000": "problem_116",
+      "M1.e@25.500,132.000,25.600,142.000": "problem_116",
+      "M1.b@30.500,132.000,30.600,142.000": "problem_117",
+      "M1.e@30.500,132.000,30.600,142.000": "problem_117",
+      "M1.b@35.500,132.000,35.600,142.000": "problem_118",
+      "M1.e@35.500,132.000,35.600,142.000": "problem_118",
+      "M1.b@40.500,132.000,40.600,142.000": "problem_119",
+      "M1.e@40.500,132.000,40.600,142.000": "problem_119",
+      "M1.b@45.500,132.000,45.600,142.000": "problem_120",
+      "M1.e@45.500,132.000,45.600,142.000": "problem_120",
+      "M1.b@0.500,144.000,0.600,154.000": "problem_121",
+      "M1.e@0.500,144.000,0.600,154.000": "problem_121",
+      "M1.b@5.500,144.000,5.600,154.000": "problem_122",
+      "M1.e@5.500,144.000,5.600,154.000": "problem_122",
+      "M1.b@10.500,144.000,10.600,154.000": "problem_123",
+      "M1.e@10.500,144.000,10.600,154.000": "problem_123",
+      "M1.b@15.500,144.000,15.600,154.000": "problem_124",
+      "M1.e@15.500,144.000,15.600,154.000": "problem_124",
+      "M1.b@20.500,144.000,20.600,154.000": "problem_125",
+      "M1.e@20.500,144.000,20.600,154.000": "problem_125",
+      "M1.b@25.500,144.000,25.600,154.000": "problem_126",
+      "M1.e@25.500,144.000,25.600,154.000": "problem_126",
+      "M1.b@30.500,144.000,30.600,154.000": "problem_127",
+      "M1.e@30.500,144.000,30.600,154.000": "problem_127",
+      "M1.b@35.500,144.000,35.600,154.000": "problem_128",
+      "M1.e@35.500,144.000,35.600,154.000": "problem_128",
+      "M1.b@40.500,144.000,40.600,154.000": "problem_129",
+      "M1.e@40.500,144.000,40.600,154.000": "problem_129",
+      "M1.b@45.500,144.000,45.600,154.000": "problem_130",
+      "M1.e@45.500,144.000,45.600,154.000": "problem_130",
+      "M1.b@0.500,156.000,0.600,166.000": "problem_131",
+      "M1.e@0.500,156.000,0.600,166.000": "problem_131",
+      "M1.b@5.500,156.000,5.600,166.000": "problem_132",
+      "M1.e@5.500,156.000,5.600,166.000": "problem_132",
+      "M1.b@10.500,156.000,10.600,166.000": "problem_133",
+      "M1.e@10.500,156.000,10.600,166.000": "problem_133",
+      "M1.b@15.500,156.000,15.600,166.000": "problem_134",
+      "M1.e@15.500,156.000,15.600,166.000": "problem_134",
+      "M1.b@20.500,156.000,20.600,166.000": "problem_135",
+      "M1.e@20.500,156.000,20.600,166.000": "problem_135",
+      "M1.b@25.500,156.000,25.600,166.000": "problem_136",
+      "M1.e@25.500,156.000,25.600,166.000": "problem_136",
+      "M1.b@30.500,156.000,30.600,166.000": "problem_137",
+      "M1.e@30.500,156.000,30.600,166.000": "problem_137",
+      "M1.b@35.500,156.000,35.600,166.000": "problem_138",
+      "M1.e@35.500,156.000,35.600,166.000": "problem_138",
+      "M1.b@40.500,156.000,40.600,166.000": "problem_139",
+      "M1.e@40.500,156.000,40.600,166.000": "problem_139",
+      "M1.b@45.500,156.000,45.600,166.000": "problem_140",
+      "M1.e@45.500,156.000,45.600,166.000": "problem_140",
+      "M1.b@0.500,168.000,0.600,178.000": "problem_141",
+      "M1.e@0.500,168.000,0.600,178.000": "problem_141",
+      "M1.b@5.500,168.000,5.600,178.000": "problem_142",
+      "M1.e@5.500,168.000,5.600,178.000": "problem_142",
+      "M1.b@10.500,168.000,10.600,178.000": "problem_143",
+      "M1.e@10.500,168.000,10.600,178.000": "problem_143",
+      "M1.b@15.500,168.000,15.600,178.000": "problem_144",
+      "M1.e@15.500,168.000,15.600,178.000": "problem_144",
+      "M1.b@20.500,168.000,20.600,178.000": "problem_145",
+      "M1.e@20.500,168.000,20.600,178.000": "problem_145",
+      "M1.b@25.500,168.000,25.600,178.000": "problem_146",
+      "M1.e@25.500,168.000,25.600,178.000": "problem_146",
+      "M1.b@30.500,168.000,30.600,178.000": "problem_147",
+      "M1.e@30.500,168.000,30.600,178.000": "problem_147",
+      "M1.b@35.500,168.000,35.600,178.000": "problem_148",
+      "M1.e@35.500,168.000,35.600,178.000": "problem_148",
+      "M1.b@40.500,168.000,40.600,178.000": "problem_149",
+      "M1.e@40.500,168.000,40.600,178.000": "problem_149",
+      "M1.b@45.500,168.000,45.600,178.000": "problem_150",
+      "M1.e@45.500,168.000,45.600,178.000": "problem_150",
+      "M1.b@0.500,180.000,0.600,190.000": "problem_151",
+      "M1.e@0.500,180.000,0.600,190.000": "problem_151",
+      "M1.b@5.500,180.000,5.600,190.000": "problem_152",
+      "M1.e@5.500,180.000,5.600,190.000": "problem_152",
+      "M1.b@10.500,180.000,10.600,190.000": "problem_153",
+      "M1.e@10.500,180.000,10.600,190.000": "problem_153",
+      "M1.b@15.500,180.000,15.600,190.000": "problem_154",
+      "M1.e@15.500,180.000,15.600,190.000": "problem_154",
+      "M1.b@20.500,180.000,20.600,190.000": "problem_155",
+      "M1.e@20.500,180.000,20.600,190.000": "problem_155",
+      "M1.b@25.500,180.000,25.600,190.000": "problem_156",
+      "M1.e@25.500,180.000,25.600,190.000": "problem_156",
+      "M1.b@30.500,180.000,30.600,190.000": "problem_157",
+      "M1.e@30.500,180.000,30.600,190.000": "problem_157",
+      "M1.b@35.500,180.000,35.600,190.000": "problem_158",
+      "M1.e@35.500,180.000,35.600,190.000": "problem_158",
+      "M1.b@40.500,180.000,40.600,190.000": "problem_159",
+      "M1.e@40.500,180.000,40.600,190.000": "problem_159",
+      "M1.b@45.500,180.000,45.600,190.000": "problem_160",
+      "M1.e@45.500,180.000,45.600,190.000": "problem_160",
+      "M1.b@0.500,192.000,0.600,202.000": "problem_161",
+      "M1.e@0.500,192.000,0.600,202.000": "problem_161",
+      "M1.b@5.500,192.000,5.600,202.000": "problem_162",
+      "M1.e@5.500,192.000,5.600,202.000": "problem_162",
+      "M1.b@10.500,192.000,10.600,202.000": "problem_163",
+      "M1.e@10.500,192.000,10.600,202.000": "problem_163",
+      "M1.b@15.500,192.000,15.600,202.000": "problem_164",
+      "M1.e@15.500,192.000,15.600,202.000": "problem_164",
+      "M1.b@20.500,192.000,20.600,202.000": "problem_165",
+      "M1.e@20.500,192.000,20.600,202.000": "problem_165",
+      "M1.b@25.500,192.000,25.600,202.000": "problem_166",
+      "M1.e@25.500,192.000,25.600,202.000": "problem_166",
+      "M1.b@30.500,192.000,30.600,202.000": "problem_167",
+      "M1.e@30.500,192.000,30.600,202.000": "problem_167",
+      "M1.b@35.500,192.000,35.600,202.000": "problem_168",
+      "M1.e@35.500,192.000,35.600,202.000": "problem_168",
+      "M1.b@40.500,192.000,40.600,202.000": "problem_169",
+      "M1.e@40.500,192.000,40.600,202.000": "problem_169",
+      "M1.b@45.500,192.000,45.600,202.000": "problem_170",
+      "M1.e@45.500,192.000,45.600,202.000": "problem_170",
+      "M1.b@0.500,204.000,0.600,214.000": "problem_171",
+      "M1.e@0.500,204.000,0.600,214.000": "problem_171",
+      "M1.b@5.500,204.000,5.600,214.000": "problem_172",
+      "M1.e@5.500,204.000,5.600,214.000": "problem_172",
+      "M1.b@10.500,204.000,10.600,214.000": "problem_173",
+      "M1.e@10.500,204.000,10.600,214.000": "problem_173",
+      "M1.b@15.500,204.000,15.600,214.000": "problem_174",
+      "M1.e@15.500,204.000,15.600,214.000": "problem_174",
+      "M1.b@20.500,204.000,20.600,214.000": "problem_175",
+      "M1.e@20.500,204.000,20.600,214.000": "problem_175",
+      "M1.b@25.500,204.000,25.600,214.000": "problem_176",
+      "M1.e@25.500,204.000,25.600,214.000": "problem_176",
+      "M1.b@30.500,204.000,30.600,214.000": "problem_177",
+      "M1.e@30.500,204.000,30.600,214.000": "problem_177",
+      "M1.b@35.500,204.000,35.600,214.000": "problem_178",
+      "M1.e@35.500,204.000,35.600,214.000": "problem_178",
+      "M1.b@40.500,204.000,40.600,214.000": "problem_179",
+      "M1.e@40.500,204.000,40.600,214.000": "problem_179",
+      "M1.b@45.500,204.000,45.600,214.000": "problem_180",
+      "M1.e@45.500,204.000,45.600,214.000": "problem_180",
+      "M1.b@0.500,216.000,0.600,226.000": "problem_181",
+      "M1.e@0.500,216.000,0.600,226.000": "problem_181",
+      "M1.b@5.500,216.000,5.600,226.000": "problem_182",
+      "M1.e@5.500,216.000,5.600,226.000": "problem_182",
+      "M1.b@10.500,216.000,10.600,226.000": "problem_183",
+      "M1.e@10.500,216.000,10.600,226.000": "problem_183",
+      "M1.b@15.500,216.000,15.600,226.000": "problem_184",
+      "M1.e@15.500,216.000,15.600,226.000": "problem_184",
+      "M1.b@20.500,216.000,20.600,226.000": "problem_185",
+      "M1.e@20.500,216.000,20.600,226.000": "problem_185",
+      "M1.b@25.500,216.000,25.600,226.000": "problem_186",
+      "M1.e@25.500,216.000,25.600,226.000": "problem_186",
+      "M1.b@30.500,216.000,30.600,226.000": "problem_187",
+      "M1.e@30.500,216.000,30.600,226.000": "problem_187",
+      "M1.b@35.500,216.000,35.600,226.000": "problem_188",
+      "M1.e@35.500,216.000,35.600,226.000": "problem_188",
+      "M1.b@40.500,216.000,40.600,226.000": "problem_189",
+      "M1.e@40.500,216.000,40.600,226.000": "problem_189",
+      "M1.b@45.500,216.000,45.600,226.000": "problem_190",
+      "M1.e@45.500,216.000,45.600,226.000": "problem_190",
+      "M1.b@0.500,228.000,0.600,238.000": "problem_191",
+      "M1.e@0.500,228.000,0.600,238.000": "problem_191",
+      "M1.b@5.500,228.000,5.600,238.000": "problem_192",
+      "M1.e@5.500,228.000,5.600,238.000": "problem_192",
+      "M1.b@10.500,228.000,10.600,238.000": "problem_193",
+      "M1.e@10.500,228.000,10.600,238.000": "problem_193",
+      "M1.b@15.500,228.000,15.600,238.000": "problem_194",
+      "M1.e@15.500,228.000,15.600,238.000": "problem_194",
+      "M1.b@20.500,228.000,20.600,238.000": "problem_195",
+      "M1.e@20.500,228.000,20.600,238.000": "problem_195",
+      "M1.b@25.500,228.000,25.600,238.000": "problem_196",
+      "M1.e@25.500,228.000,25.600,238.000": "problem_196",
+      "M1.b@30.500,228.000,30.600,238.000": "problem_197",
+      "M1.e@30.500,228.000,30.600,238.000": "problem_197",
+      "M1.b@35.500,228.000,35.600,238.000": "problem_198",
+      "M1.e@35.500,228.000,35.600,238.000": "problem_198",
+      "M1.b@40.500,228.000,40.600,238.000": "problem_199",
+      "M1.e@40.500,228.000,40.600,238.000": "problem_199",
+      "M1.b@45.500,228.000,45.600,238.000": "problem_200",
+      "M1.e@45.500,228.000,45.600,238.000": "problem_200"
     }
   },
-  "notes": "Site type s4. Verified in docs/results_phase3.md. 200 clean site(s) act as distractors."
+  "notes": "Site type s4. Verified in docs/results_phase3.md. 200 clean site(s) act as distractors.",
+  "task_type": "root_cause"
 }

@@ -73,7 +73,47 @@
           0.3
         ]
       }
+    },
+    "problems": {
+      "problem_001": {
+        "rules": [
+          "M1.b"
+        ],
+        "marker_count": 1
+      },
+      "problem_002": {
+        "rules": [
+          "M1.b"
+        ],
+        "marker_count": 1
+      },
+      "problem_003": {
+        "rules": [
+          "M1.b"
+        ],
+        "marker_count": 1
+      },
+      "problem_004": {
+        "rules": [
+          "M1.b"
+        ],
+        "marker_count": 1
+      },
+      "problem_005": {
+        "rules": [
+          "M1.b"
+        ],
+        "marker_count": 1
+      }
+    },
+    "marker_to_problem": {
+      "M1.b@0.500,0.000,0.600,10.000": "problem_001",
+      "M1.b@5.500,0.000,5.600,10.000": "problem_002",
+      "M1.b@10.500,0.000,10.600,10.000": "problem_003",
+      "M1.b@15.500,0.000,15.600,10.000": "problem_004",
+      "M1.b@20.500,0.000,20.600,10.000": "problem_005"
     }
   },
-  "notes": "Site type s1. Verified in docs/results_phase3.md. 5 clean site(s) act as distractors."
+  "notes": "Site type s1. Verified in docs/results_phase3.md. 5 clean site(s) act as distractors.",
+  "task_type": "root_cause"
 }

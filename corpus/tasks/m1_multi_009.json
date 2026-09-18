@@ -75,7 +75,57 @@
           0.3
         ]
       }
+    },
+    "problems": {
+      "problem_001": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_002": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_003": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_004": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      },
+      "problem_005": {
+        "rules": [
+          "M1.b",
+          "M1.e"
+        ],
+        "marker_count": 2
+      }
+    },
+    "marker_to_problem": {
+      "M1.b@0.500,0.000,0.600,10.000": "problem_001",
+      "M1.e@0.500,0.000,0.600,10.000": "problem_001",
+      "M1.b@5.500,0.000,5.600,10.000": "problem_002",
+      "M1.e@5.500,0.000,5.600,10.000": "problem_002",
+      "M1.b@10.500,0.000,10.600,10.000": "problem_003",
+      "M1.e@10.500,0.000,10.600,10.000": "problem_003",
+      "M1.b@15.500,0.000,15.600,10.000": "problem_004",
+      "M1.e@15.500,0.000,15.600,10.000": "problem_004",
+      "M1.b@20.500,0.000,20.600,10.000": "problem_005",
+      "M1.e@20.500,0.000,20.600,10.000": "problem_005"
     }
   },
-  "notes": "Site type s4. Verified in docs/results_phase3.md. 5 clean site(s) act as distractors."
+  "notes": "Site type s4. Verified in docs/results_phase3.md. 5 clean site(s) act as distractors.",
+  "task_type": "root_cause"
 }

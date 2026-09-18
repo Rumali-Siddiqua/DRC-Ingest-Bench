@@ -56,3 +56,15 @@ pitch 5 x 12 um. Site types and their DRC markers:
 ## Phase 3 summary
 - 26 tasks, all validated (rebuilt from JSON, DRC matched, fix verified clean)
 - 2 single-injection, 20 multi-site (1-200 problems), 4 clustering (1 problem, up to 7,680 markers)
+
+## Scoring schema
+- Each task now carries ground_truth.problems (rules, marker_count per problem) and
+  ground_truth.marker_to_problem, derived from actual DRC output via harness/add_scoring.py
+- Markers are grouped by the generator site containing them (5 x 12 um pitch); clustering
+  tasks group all markers under one problem (the array pitch)
+- Canonical marker id: "<rule>@x0,y0,x1,y1" (3 dp), stable because DRC is deterministic
+- All 26 derived problem counts match the previously stated distinct_problems
+- Validator still passes 26/26 after the schema change
+- Marker-to-problem ratios span 1:1 to 7,680:1
+- Observation: in s4 sites the M1.b and M1.e markers share identical geometry, so one
+  physical gap is reported twice under different rules
