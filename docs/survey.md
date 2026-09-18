@@ -34,11 +34,13 @@ that report. At larger scales the repeated per-marker structure dominates instea
 violation occupies twelve lines of XML of which one carries geometry, and 64–67% of each
 marker's tokens are overhead rather than geometry, stable from 11 markers to 38,400.
 
-The largest scale case contained **38,400 reported markers but only 24 distinct underlying
-problems**, and the complete `.lyrdb` required **4,468,961 tokens** under the reference
-tokenizer. This result is documented in `docs/results_phase2.md`. The gap between report size
-and debugging-problem count is exactly the kind of redundancy that motivates comparing raw
-ingestion with semantic restructuring and query-based access.
+The largest scale case contained **38,400 reported markers**, produced by repeating a base
+cell carrying 24 markers across 1,600 identical instances, and the complete `.lyrdb` required
+**4,468,961 tokens** under the reference tokenizer. This result is documented in
+`docs/results_phase2.md`; whether those 24 markers correspond to 24 distinct root causes was
+not separately verified. The repetition of identical marker patterns across instances is the
+kind of redundancy that motivates comparing raw ingestion with semantic restructuring and
+query-based access.
 
 The human-oriented report representation and the information requirements of an LLM debugging
 task are therefore not equivalent.

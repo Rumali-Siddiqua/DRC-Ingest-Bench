@@ -49,7 +49,9 @@ component counts and do not sum to it: inter-item newlines and closing tags are
 excluded from them.)
 - All counts match 24 x N^2 (DRC-validated)
 - Cost linear in markers (~110 tok/marker); rises 109 -> 114 as coordinates grow
-- 38,400 markers = 24 distinct problems x 1,600 identical cells; raw = 4.4M tokens
+- 38,400 markers come from a base cell with 24 markers repeated across 1,600 identical
+  instances; raw = 4,468,961 tokens. Whether those 24 markers correspond to 24 distinct
+  root causes was not verified, so they are described as marker patterns, not problems.
 - DRC runtime 11s -> 42s; reading the report costs far more than producing it
 
 ## Run 5: tokenizer comparison on Run 4 reports (whole-file counts)
