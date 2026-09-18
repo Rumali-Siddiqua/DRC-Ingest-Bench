@@ -37,3 +37,26 @@
 - What this means: whether the discarded positions matter depends on the task
   (root-cause identification vs exhaustive listing). This is exactly what the
   task-success evaluation has to determine.
+
+## Context fit and per-task costs (all 26 tasks, cl100k_base)
+Full table: experiments/phase4/context_fit.csv
+
+Tasks fitting a window (representation alone, excluding prompt and answer):
+| window | raw | json | clustered | signature |
+|--------|-----|------|-----------|-----------|
+| 128k | 24/26 | 25/26 | 25/26 | 26/26 |
+| 200k | 24/26 | 25/26 | 25/26 | 26/26 |
+| 1M | 26/26 | 26/26 | 26/26 | 26/26 |
+- Weak result: the corpus does not reach the scale where raw ingestion is impossible.
+  The Phase 2 40x40 case (4.47M tokens) exceeds every window but is not a task.
+  Adding a task at that scale would make this a real finding.
+
+Stronger observations from the per-task table:
+- Raw carries a fixed ~49,000-token floor: m1_space_001 costs 49,101 tokens raw vs 66
+  as JSON for a single violation (744x), entirely the rule catalogue.
+- Signature cost is nearly flat across scale: 151 tokens at 1 marker, 340 at 7,680,
+  because it scales with distinct marker shapes, not marker count. JSON scales linearly.
+- Signature loses on small tasks (151 vs 66 at 1 marker): grouping structure is overhead
+  when there is nothing to collapse.
+- Signature gains least on 2:1 tasks (m1_multi_015: 627 vs 1,351, only 2x), where two
+  shapes and 50 distinct positions leave little to compress.
