@@ -96,3 +96,53 @@ BUILDERS = {"raw": raw, "json": compact_json, "clustered": clustered}
 
 def build(name, report):
     return BUILDERS[name](report)
+
+
+def _signature(rule, bb, dp=3):
+    """Rule plus marker shape, rounded. Position deliberately discarded."""
+    w = round(bb[2] - bb[0], dp)
+    h = round(bb[3] - bb[1], dp)
+    return (rule, w, h)
+
+
+def signature_clustered(report, max_positions=20):
+    """Group markers with identical rule and shape, wherever they are."""
+    ms = read_markers(report)
+    rules, groups = {}, {}
+
+    for rule, desc, bb in ms:
+        rules.setdefault(rule, desc)
+        groups.setdefault(_signature(rule, bb), []).append(bb)
+
+    out = []
+    for i, ((rule, w, h), boxes) in enumerate(sorted(groups.items(), key=lambda kv: -len(kv[1])), 1):
+        pos = [[round((b[0] + b[2]) / 2, 3), round((b[1] + b[3]) / 2, 3)] for b in boxes]
+        entry = {
+            "group": i,
+            "rule": rule,
+            "marker_shape_um": [w, h],
+            "marker_count": len(boxes),
+            "example": [round(v, 3) for v in boxes[0]],
+        }
+        if len(pos) <= max_positions:
+            entry["positions"] = pos
+        else:
+            entry["positions_sample"] = pos[:max_positions]
+            entry["positions_omitted"] = len(pos) - max_positions
+            xs = [p[0] for p in pos]
+            ys = [p[1] for p in pos]
+            entry["positions_extent"] = [min(xs), min(ys), max(xs), max(ys)]
+        out.append(entry)
+
+    return json.dumps({
+        "rules": rules,
+        "total_markers": len(ms),
+        "group_count": len(out),
+        "groups": out,
+        "note": ("Markers are grouped by rule and marker shape, ignoring position. Identical "
+                 "shapes repeated across a design fall in one group. A group is not a verified "
+                 "root cause: unrelated problems can share a shape."),
+    }, separators=(",", ":"))
+
+
+BUILDERS["signature"] = signature_clustered
