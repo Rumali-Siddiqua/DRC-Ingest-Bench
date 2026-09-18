@@ -73,9 +73,13 @@ def mock_perfect(prompt, task):
         m = re.search(r"@([-\d.]+),([-\d.]+),([-\d.]+),([-\d.]+)$", boxes[0])
         x = (float(m[1]) + float(m[3])) / 2
         y = (float(m[2]) + float(m[4])) / 2
-        probs.append({"id": i, "rules": info["rules"], "location_um": [x, y],
-                      "marker_count": info["marker_count"],
-                      "fix_min_gap_um": gt["fix"].get("min_gap_um")})
+        entry = {"id": i, "rules": info["rules"], "location_um": [x, y],
+                 "marker_count": info["marker_count"]}
+        if gt["fix"].get("type") == "snap_array_pitch":
+            entry["fix_pitch_um"] = [gt["fix"]["pitch_x_um"], gt["fix"]["pitch_y_um"]]
+        else:
+            entry["fix_min_gap_um"] = gt["fix"].get("min_gap_um")
+        probs.append(entry)
     text = json.dumps({"problems": probs})
     return text, len(enc.encode(prompt)), len(enc.encode(text))
 

@@ -60,3 +60,42 @@ def test_malformed_answer_scores_zero():
         s = score(TASK, bad)
         assert s["parse_ok"] is False
         assert s["f1"] == 0.0
+
+
+CLUSTER_TASK = json.loads(Path("corpus/tasks/m1_cluster_001.json").read_text())
+# m1_cluster_001: 160 off-grid markers, 1 problem, fix = snap pitch to 15.0 x 15.0 um.
+
+
+def _cluster_location():
+    """A point inside the clustering task's only problem."""
+    mid = next(iter(CLUSTER_TASK["ground_truth"]["marker_to_problem"]))
+    parts = mid.rsplit("@", 1)[1].split(",")
+    x0, y0, x1, y1 = (float(v) for v in parts)
+    return [(x0 + x1) / 2, (y0 + y1) / 2]
+
+
+def test_correct_pitch_fix_scores_one():
+    ans = {"problems": [{"id": 1, "rules": ["metal1_drw_Offgrid"],
+                         "location_um": _cluster_location(),
+                         "fix_pitch_um": [15.0, 15.0]}]}
+    s = score(CLUSTER_TASK, ans)
+    assert s["fix_type"] == "snap_array_pitch"
+    assert s["f1"] == 1.0
+    assert s["fix_validity"] == 1.0
+
+
+def test_wrong_pitch_fix_scores_zero():
+    ans = {"problems": [{"id": 1, "rules": ["metal1_drw_Offgrid"],
+                         "location_um": _cluster_location(),
+                         "fix_pitch_um": [15.002, 15.002]}]}   # unchanged pitch
+    s = score(CLUSTER_TASK, ans)
+    assert s["fix_validity"] == 0.0
+
+
+def test_gap_fix_on_pitch_task_is_not_credited():
+    """A spacing fix does not repair an off-grid pitch."""
+    ans = {"problems": [{"id": 1, "rules": ["metal1_drw_Offgrid"],
+                         "location_um": _cluster_location(),
+                         "fix_min_gap_um": 0.22}]}
+    s = score(CLUSTER_TASK, ans)
+    assert s["fix_validity"] == 0.0

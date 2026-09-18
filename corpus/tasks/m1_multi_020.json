@@ -1244,7 +1244,8 @@
           0.3,
           0.3
         ]
-      }
+      },
+      "type": "set_min_gap"
     },
     "problems": {
       "problem_001": {

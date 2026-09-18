@@ -32,11 +32,12 @@ def distance_to_boxes(pt, boxes):
 
 def score(task, answer):
     truth = truth_problems(task)
-    required_gap = task["ground_truth"]["fix"].get("min_gap_um")
+    fix_spec = task["ground_truth"]["fix"]
 
     if not isinstance(answer, dict) or not isinstance(answer.get("problems"), list):
         return {"parse_ok": False, "precision": 0.0, "recall": 0.0, "f1": 0.0,
-                "rule_accuracy": 0.0, "fix_validity": 0.0,
+                "rule_accuracy": 0.0, "fix_validity": 0.0, "matched": 0,
+                "fix_type": task["ground_truth"]["fix"].get("type"),
                 "reported": 0, "truth": len(truth), "count_error": -len(truth)}
 
     reported = answer["problems"]
@@ -68,11 +69,23 @@ def score(task, answer):
     rules_ok = sum(
         1 for i, pid in matches
         if sorted(str(r) for r in reported[i].get("rules", [])) == sorted(truth[pid]["rules"]))
-    fix_ok = sum(
-        1 for i, _ in matches
-        if required_gap is not None
-        and isinstance(reported[i].get("fix_min_gap_um"), (int, float))
-        and reported[i]["fix_min_gap_um"] >= required_gap)
+    fix_ok, fix_scored = 0, False
+    if fix_spec.get("type") == "set_min_gap" and fix_spec.get("min_gap_um") is not None:
+        fix_scored = True
+        need = fix_spec["min_gap_um"]
+        fix_ok = sum(
+            1 for i, _ in matches
+            if isinstance(reported[i].get("fix_min_gap_um"), (int, float))
+            and reported[i]["fix_min_gap_um"] >= need)
+    elif fix_spec.get("type") == "snap_array_pitch":
+        fix_scored = True
+        tol = 1e-6
+        fix_ok = sum(
+            1 for i, _ in matches
+            if isinstance(reported[i].get("fix_pitch_um"), (list, tuple))
+            and len(reported[i]["fix_pitch_um"]) == 2
+            and abs(float(reported[i]["fix_pitch_um"][0]) - fix_spec["pitch_x_um"]) < tol
+            and abs(float(reported[i]["fix_pitch_um"][1]) - fix_spec["pitch_y_um"]) < tol)
 
     return {
         "parse_ok": True,
@@ -84,7 +97,8 @@ def score(task, answer):
         "recall": round(recall, 4),
         "f1": round(f1, 4),
         "rule_accuracy": round(rules_ok / n_match, 4) if n_match else 0.0,
-        "fix_validity": round(fix_ok / n_match, 4) if n_match else 0.0,
+        "fix_type": fix_spec.get("type"),
+        "fix_validity": (round(fix_ok / n_match, 4) if n_match else 0.0) if fix_scored else None,
     }
 
 

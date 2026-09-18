@@ -47,7 +47,8 @@
       "reason": "M1.e: space to a wire wider than 0.3 um with parallel run > 1.0 um",
       "layout_args": {
         "gap": 0.22
-      }
+      },
+      "type": "set_min_gap"
     },
     "problems": {
       "problem_001": {

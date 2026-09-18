@@ -38,7 +38,10 @@
       "layout_args": {
         "step_x_um": 15.0,
         "step_y_um": 15.0
-      }
+      },
+      "type": "snap_array_pitch",
+      "pitch_x_um": 15.0,
+      "pitch_y_um": 15.0
     },
     "problems": {
       "problem_001": {

@@ -107,3 +107,13 @@ Three reference strategies establish the scale that real model results are read 
   identical across all four representations. These runs validate the scorer, not the
   representations, and mock_perfect is NOT an achievable ceiling for lossy representations
   (signature shows only 20 of 1,000 positions on m1_multi_021).
+
+## Correction: typed fixes
+- The original scorer only understood a min_gap_um fix, so the 5 clustering tasks scored
+  fix_validity = 0 even for a correct answer. Zero implied a wrong fix; the metric simply
+  did not apply.
+- Fixes are now typed: set_min_gap (23 tasks) and snap_array_pitch (5 tasks). The scorer
+  handles each, and fix_validity is null when a task's fix type has no automated check.
+- The earlier note that mock_perfect scoring 1.00 "confirms the scorer and ground truth
+  agree" referred to f1 only. With typed fixes, mock_perfect now scores 1.00 on f1,
+  rule accuracy and fix validity across all 112 runs.

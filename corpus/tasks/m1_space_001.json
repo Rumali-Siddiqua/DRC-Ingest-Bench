@@ -47,7 +47,8 @@
       "reason": "both wires are wider than 0.3 um with a 10 um parallel run, so M1.e (0.22 um) also applies by rule text",
       "layout_args": {
         "gap": 0.22
-      }
+      },
+      "type": "set_min_gap"
     },
     "problems": {
       "problem_001": {

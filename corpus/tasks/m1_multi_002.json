@@ -45,7 +45,8 @@
         "gaps": [
           0.22
         ]
-      }
+      },
+      "type": "set_min_gap"
     },
     "problems": {
       "problem_001": {
